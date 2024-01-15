@@ -1624,7 +1624,7 @@ header .logo a {
  */
 
 #intro {
-    background: #151515 url(../images/intro-background.jpg) no-repeat center bottom;
+    background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -1953,12 +1953,12 @@ header .logo a {
     .intro-info .lead {
         padding-left: 11rem;
     }
-    .about-content h3 {
-        text-align: center;
-    }
     .about-content .info-list,
     .about-content .skill-bars {
         margin-bottom: 4.2rem;
+    }
+    .info-list {
+        text-align: center;
     }
     .button-section .button {
         width: 100%;
@@ -2089,6 +2089,24 @@ header .logo a {
     position: absolute;
     left: 0;
     bottom: 0;
+}
+
+#resume .doi-btn {
+    font-family: "poppins-bold", sans-serif;
+    font-size: 1.6rem;
+    color: #000;
+    border: #000;
+    border-width: 0.2rem;
+    border-style: solid;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+#resume .doi-btn:hover {
+    border: #FF5757;
+    color: #FF5757;
+    border-width: 0.2rem;
+    border-style: solid;
 }
 
 
@@ -2533,117 +2551,13 @@ header .logo a {
 
 /** 
  * ===================================================================
- * 15. services - (_layout.scss)
- *
- * ------------------------------------------------------------------- 
- */
-
-#services {
-    background: #313131 url(../images/bg.jpg) no-repeat center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    padding-top: 12rem;
-    padding-bottom: 12rem;
-    color: white;
-    position: relative;
-}
-
-#services .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #151515;
-    opacity: .9;
-}
-
-#services .section-intro {
-    margin-bottom: 1.8rem;
-}
-
-#services .section-intro h1 {
-    color: white;
-}
-
-#services .section-intro h5 {
-    color: #FF5757;
-}
-
-#services .section-intro p {
-    color: rgba(255, 255, 255, 0.7);
-}
-
-.services-content {
-    max-width: 1200px;
-}
-
-.services-list {
-    margin-top: 1.2rem;
-    text-align: center;
-}
-
-.services-list .service {
-    margin-bottom: 1.2rem;
-    padding: 0 30px;
-}
-
-.services-list .icon {
-    display: inline-block;
-    margin-bottom: 2.1rem;
-}
-
-.services-list .icon i {
-    font-size: 5.4rem;
-    color: #FF5757;
-}
-
-.services-list h3 {
-    color: #FFFFFF;
-}
-
-.services-list .desc {
-    color: rgba(255, 255, 255, 0.6);
-}
-
-
-/* pagination */
-
-.owl-pagination {
-    text-align: center;
-    width: 100%;
-    margin: .6rem 0 0;
-}
-
-.owl-theme .owl-controls .owl-page {
-    display: inline-block;
-}
-
-.owl-theme .owl-controls .owl-page span {
-    display: block;
-    width: 1.2rem;
-    height: 1.2rem;
-    margin: 1.2rem .8rem 0 .8rem;
-    border-radius: 50%;
-    display: inline-block;
-    background: #FFFFFF;
-}
-
-.owl-theme .owl-controls .owl-page.active span {
-    background: #FF5757;
-}
-
-
-/** 
- * ===================================================================
  * 16. stats - (_layout.scss)
  *
  * ------------------------------------------------------------------- 
  */
 
 #stats {
-    background: #FF5757;
+    background: #d63a3a;
     padding-top: 7.2rem;
     padding-bottom: 6rem;
     text-align: center;
@@ -3137,6 +3051,164 @@ footer .copyright span:last-child::after {
 
 #go-top a:hover {
     background: #000000;
+}
+
+
+/** 
+ * ===================================================================
+ * 19. certificates
+ *
+ * ------------------------------------------------------------------- 
+ */
+
+#modal-cert {
+    max-width: 90%;
+    position: relative;
+    margin: 0 auto;
+    color: #000;
+    /* background-color: #000; */
+}
+
+.owl-carousel .owl-item {
+    transition: opacity 0.5s ease-in-out;
+    /* Adjust the transition properties as needed */
+}
+
+.cert-list {
+    margin-bottom: 1.2rem;
+    text-align: center;
+    padding: 0 2rem;
+    /* background-color: #000; */
+}
+
+.cert-description-box {
+    padding: 1rem 3rem;
+}
+
+.cert1 {
+    margin-bottom: 1.2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    background-color: #cfcfcf;
+    color: #000;
+}
+
+.cert1 h3 {
+    color: #000;
+}
+
+.cert1 .doi-btn {
+    font-family: "poppins-bold", sans-serif;
+    font-size: 1.6rem;
+    color: #000;
+    border: #000;
+    border-width: 0.2rem;
+    border-style: solid;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.cert1 .doi-btn:hover {
+    /* border: #a2a2a2; */
+    color: #cfcfcf;
+    background-color: #000;
+    border-width: 0.2rem;
+    border-style: solid;
+}
+
+.cert2 {
+    margin-bottom: 1.2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    background-color: #000000;
+    color: #fff;
+}
+
+.cert2 h3 {
+    color: #fff;
+}
+
+.cert2 .doi-btn {
+    font-family: "poppins-bold", sans-serif;
+    font-size: 1.6rem;
+    color: #cfcfcf;
+    border: #cfcfcf;
+    border-width: 0.2rem;
+    border-style: solid;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+}
+
+.cert2 .doi-btn:hover {
+    /* border: #a2a2a2; */
+    color: #000;
+    background-color: #cfcfcf;
+    border-width: 0.2rem;
+    border-style: solid;
+}
+
+.cert-name {
+    font-size: small;
+    padding-top: 0.8rem;
+}
+
+.cert-name .doi-btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#modal-cert a {
+    width: 100%;
+}
+
+.owl-pagination {
+    /* text-align: center; */
+    width: 100%;
+    /* margin: .6rem 0 0; */
+}
+
+
+/* .owl-theme .owl-controls .owl-page {
+    display: inline-block;
+}
+
+.owl-theme .owl-controls .owl-page span {
+    display: block;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 1.2rem .8rem 0 .8rem;
+    border-radius: 50%;
+    display: inline-block;
+    background: #000;
+}
+
+.owl-theme .owl-controls .owl-page active {
+    background: #929090;
+} */
+
+.owl-controls .owl-buttons .owl-prev:after,
+.owl-controls .owl-buttons .owl-next:after {
+    font-family: FontAwesome;
+    color: #000;
+    font-size: 50px;
+    position: absolute;
+    top: 40%;
+    width: 2rem;
+}
+
+.owl-controls .owl-buttons .owl-prev:after {
+    content: "\f104";
+    left: 0;
+    /* right: 80rem; */
+}
+
+.owl-controls .owl-buttons .owl-next:after {
+    content: "\f105";
+    right: 0;
+    /* right: 80rem; */
 }
 
 

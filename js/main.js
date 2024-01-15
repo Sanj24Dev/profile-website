@@ -44,15 +44,21 @@
     /*---------------------------------------------------- */
     /* Owl Carousel
     ------------------------------------------------------ */
-    $("#owl-slider").owlCarousel({
-        navigation: false,
-        pagination: true,
-        itemsCustom: [
-            [0, 1],
-            [700, 2],
-            [960, 3]
-        ],
-        navigationText: false
+    $(function() {
+        // Owl Carousel
+        var owl = $(".owl-carousel");
+        owl.owlCarousel({
+            navigation: true,
+            navigationText: ["", ""],
+            pagination: true,
+            autoPlay: false,
+            itemsCustom: [
+                [0, 1],
+                [700, 2],
+                [960, 4]
+            ],
+            loop: true,
+        });
     });
 
 
@@ -119,6 +125,16 @@
     /*	Modal Popup
     ------------------------------------------------------*/
     $('.item-wrap a').magnificPopup({
+
+        type: 'inline',
+        fixedContentPos: false,
+        removalDelay: 300,
+        showCloseBtn: false,
+        mainClass: 'mfp-fade'
+
+    });
+
+    $('.stat-cert a').magnificPopup({
 
         type: 'inline',
         fixedContentPos: false,
