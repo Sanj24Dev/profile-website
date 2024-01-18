@@ -2362,7 +2362,7 @@ header .logo a {
 .popup-modal .link-box {
     width: 100%;
     overflow: hidden;
-    background: #000000;
+    background: #544848;
 }
 
 .popup-modal .link-box a {
@@ -2557,7 +2557,7 @@ header .logo a {
  */
 
 #stats {
-    background: #d63a3a;
+    background: #e25f5f;
     padding-top: 7.2rem;
     padding-bottom: 6rem;
     text-align: center;
@@ -2582,17 +2582,18 @@ header .logo a {
 }
 
 #stats .stat-count {
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     font-size: 3.6rem;
     margin-top: 1.2rem;
     margin-bottom: 0;
     font-family: "poppins-medium", sans-serif;
-    color: white;
+    /* color: white; */
 }
 
-#stats .stat-title {
+
+/* #stats .stat-title {
     color: rgba(255, 255, 255, 0.5);
-}
+} */
 
 
 /**
@@ -3074,10 +3075,21 @@ footer .copyright span:last-child::after {
     /* Adjust the transition properties as needed */
 }
 
+#modal-cert h1 {
+    padding-top: 2rem;
+    padding-left: 2rem;
+}
+
+#modal-cert h2 {
+    padding-top: 2rem;
+    padding-left: 5rem;
+}
+
 .cert-list {
     margin-bottom: 1.2rem;
     text-align: center;
     padding: 0 2rem;
+    height: max-content;
     /* background-color: #000; */
 }
 
@@ -3089,9 +3101,9 @@ footer .copyright span:last-child::after {
     margin-bottom: 1.2rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-    padding: 2rem 1.5rem;
+    padding-bottom: 2rem;
     border-radius: 1rem;
-    background-color: #cfcfcf;
+    background-color: #f4cccc;
     color: #000;
 }
 
@@ -3099,9 +3111,15 @@ footer .copyright span:last-child::after {
     color: #000;
 }
 
-.cert1 .doi-btn {
-    font-family: "poppins-bold", sans-serif;
-    font-size: 1.6rem;
+#modal-cert img {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.cert-btn {
+    font-family: "poppins", sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
     color: #000;
     border: #000;
     border-width: 0.2rem;
@@ -3110,7 +3128,7 @@ footer .copyright span:last-child::after {
     border-radius: 0.3rem;
 }
 
-.cert1 .doi-btn:hover {
+.cert-btn:hover {
     /* border: #a2a2a2; */
     color: #cfcfcf;
     background-color: #000;
@@ -3122,33 +3140,9 @@ footer .copyright span:last-child::after {
     margin-bottom: 1.2rem;
     margin-left: 0.5rem;
     margin-right: 0.5rem;
-    padding: 2rem 1.5rem;
+    padding-bottom: 2rem;
     border-radius: 1rem;
-    background-color: #000000;
-    color: #fff;
-}
-
-.cert2 h3 {
-    color: #fff;
-}
-
-.cert2 .doi-btn {
-    font-family: "poppins-bold", sans-serif;
-    font-size: 1.6rem;
-    color: #cfcfcf;
-    border: #cfcfcf;
-    border-width: 0.2rem;
-    border-style: solid;
-    padding: 0.5rem;
-    border-radius: 0.3rem;
-}
-
-.cert2 .doi-btn:hover {
-    /* border: #a2a2a2; */
-    color: #000;
-    background-color: #cfcfcf;
-    border-width: 0.2rem;
-    border-style: solid;
+    background-color: #fce5cd;
 }
 
 .cert-name {
