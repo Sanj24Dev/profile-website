@@ -2091,6 +2091,10 @@ header .logo a {
     bottom: 0;
 }
 
+dt {
+    display: list-item;
+}
+
 #resume .doi-btn {
     font-family: "poppins-bold", sans-serif;
     font-size: 1.6rem;
@@ -2203,6 +2207,25 @@ header .logo a {
     background: #FFFFFF;
     padding-top: 12rem;
     padding-bottom: 12rem;
+}
+
+#portfolio .doi-btn {
+    font-family: "poppins-bold", sans-serif;
+    font-size: 1.6rem;
+    color: #000;
+    border: #000;
+    border-width: 0.2rem;
+    border-style: solid;
+    padding: 0.5rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+#portfolio .doi-btn:hover {
+    border: #FF5757;
+    color: #FF5757;
+    border-width: 0.2rem;
+    border-style: solid;
 }
 
 #portfolio .folio-item {
@@ -2588,6 +2611,10 @@ header .logo a {
     margin-bottom: 0;
     font-family: "poppins-medium", sans-serif;
     /* color: white; */
+}
+
+#stats a:focus {
+    outline: none;
 }
 
 
