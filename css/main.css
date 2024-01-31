@@ -1624,7 +1624,7 @@ header .logo a {
  */
 
 #intro {
-    background: #151515 url(../images/intro-bg.jpg) no-repeat center bottom;
+    background: #151515 url(../images/intro-bg-2.jpg) no-repeat center bottom;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -1858,8 +1858,8 @@ header .logo a {
 }
 
 .intro-info img {
-    height: 9rem;
-    width: 9rem;
+    height: 11rem;
+    width: 11rem;
     border-radius: 50%;
     margin: .9rem 0 0 0;
     float: left;
@@ -1867,7 +1867,7 @@ header .logo a {
 
 .intro-info .lead {
     text-align: justify;
-    padding-left: 13rem;
+    padding-left: 15rem;
 }
 
 .about-content {
@@ -1913,6 +1913,19 @@ header .logo a {
     color: #888888;
     font-size: 1.5rem;
     line-height: 1;
+}
+
+.about-content .info-list li span i {
+    display: block;
+    margin-left: auto;
+    /* color: #000; */
+    font-weight: 800;
+    font-size: 1.5rem;
+    line-height: 1;
+}
+
+.about-content .info-list li span i:hover {
+    color: #000;
 }
 
 .about-content .skill-bars {
@@ -2075,6 +2088,14 @@ header .logo a {
     padding-left: 60px;
 }
 
+#resume .timeline-content p {
+    text-align: justify;
+}
+
+#resume .timeline-content dd {
+    text-align: justify;
+}
+
 #resume .timeline-content h4 {
     position: relative;
     padding-bottom: 1.8rem;
@@ -2212,8 +2233,8 @@ dt {
 #portfolio .doi-btn {
     font-family: "poppins-bold", sans-serif;
     font-size: 1.6rem;
-    color: #000;
-    border: #000;
+    color: #888888;
+    color: #888888;
     border-width: 0.2rem;
     border-style: solid;
     padding: 0.5rem;
@@ -2222,8 +2243,8 @@ dt {
 }
 
 #portfolio .doi-btn:hover {
-    border: #FF5757;
-    color: #FF5757;
+    border: #000;
+    color: #000;
     border-width: 0.2rem;
     border-style: solid;
 }
@@ -2882,6 +2903,27 @@ dt {
     color: #FF5757;
 }
 
+.button-contact {
+    color: #000;
+    background-color: #fff;
+    display: block;
+    /* height: 6rem; */
+    width: fit-content;
+    line-height: 5.4rem;
+    padding: 0 3rem 0 3rem;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    letter-spacing: .25rem;
+}
+
+.button-contact:hover,
+.button-contact:focus {
+    /* border-color: #FF5757; */
+    color: #fff;
+    background-color: #ff5757;
+}
+
 
 /**
  * loader animation - (_layout.scss)
@@ -3122,7 +3164,62 @@ footer .copyright span:last-child::after {
 
 .cert-description-box {
     padding: 1rem 3rem;
+    display: flex;
+    flex-direction: row;
 }
+
+.cert-description-box h1 {
+    width: 50%;
+    text-align: left;
+}
+
+.popup-cert-modal {
+    max-width: 550px;
+    background: #FFFFFF;
+    position: relative;
+    margin: 0 auto;
+}
+
+.popup-cert-modal .link-box {
+    text-align: right;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    width: 50%;
+    font-size: 4rem;
+    /* width: 20%;
+    float: right;
+    overflow: hidden; 
+    background: #544848; */
+}
+
+
+/* .popup-modal .link-box a {
+    font-family: "poppins-bold", sans-serif;
+    font-size: 1.2rem;
+    line-height: 6rem;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    cursor: pointer;
+    display: block;
+    text-align: center;
+    float: left;
+    width: 50%;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.popup-modal .link-box a:first-child {
+    border-right: 1px solid rgba(200, 200, 200, 0.1);
+}
+
+.popup-modal .link-box a:hover {
+    background: #FF5757;
+    border: none;
+} */
 
 .cert1 {
     margin-bottom: 1.2rem;

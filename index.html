@@ -48,7 +48,7 @@
 
     <!-- favicons
 	================================================== -->
-    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="icon" type="image/png" href="symbol.png">
 
 </head>
 
@@ -137,10 +137,10 @@
 
                 <div class="intro-info">
 
-                    <img src="images/profile-pic.jpg" alt="Profile Picture">
+                    <img src="images/profile-pic-2.jpg" alt="Profile Picture">
 
-                    <p class="lead">I'm Sanjana Ganesh Nayak, an engineering undergrad with a zest for Internet of Things. Beyond the professional realm, I'm a passionate reader. I believe in [Core Values] and strive to [Mission or Purpose]. My journey has been a tapestry
-                        of [Interesting Experiences and Insights].</p>
+                    <p class="lead">Hey there, I'm Sanjana Ganesh Nayak, a soon-to-be college grad. I find solace in the pages of books and the art of sketching, particularly bringing cartoon characters to life. I'm all about chasing challenges and solving problems,
+                        where each experience and insight contributes to the unfolding tapestry of my professional narrative.</p>
                 </div>
 
             </div>
@@ -152,7 +152,7 @@
             <div class="col-six tab-full">
 
                 <h3>Profile</h3>
-                <p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+                <p>I am a final-year engineering student with a specific interest in automation and robotics. My expertise lies in firmware development, and I possess hands-on experience in crafting software for embedded systems.</p>
 
                 <ul class="info-list">
                     <li>
@@ -169,7 +169,7 @@
                     </li>
                     <li>
                         <strong>Website:</strong>
-                        <span>www.com</span>
+                        <span style="display: flex; flex-wrap: nowrap;"> <div id="copyLink">https://sanj24dev.github.io/profile-website/</div> <i class="fa fa-copy" id="copyIcon" style="cursor: pointer;"></i></span>
                     </li>
                     <li>
                         <strong>Email:</strong>
@@ -180,11 +180,34 @@
                 <!-- /info-list -->
 
             </div>
+            <script>
+                document.getElementById('copyIcon').addEventListener('click', function() {
+                    var linkElement = document.getElementById('copyLink');
+                    var linkToCopy = linkElement.innerText;
 
+                    // Create a temporary input element
+                    var tempInput = document.createElement('input');
+                    tempInput.value = linkToCopy;
+                    document.body.appendChild(tempInput);
+
+                    // Select the text in the input element
+                    tempInput.select();
+                    tempInput.setSelectionRange(0, 99999); // For mobile devices
+
+                    // Copy the text to the clipboard
+                    document.execCommand('copy');
+
+                    // Remove the temporary input element
+                    document.body.removeChild(tempInput);
+
+                    // Provide some visual feedback (you can customize this part)
+                    alert('Link copied to clipboard!');
+                });
+            </script>
             <div class="col-six tab-full">
 
                 <h3>Skills</h3>
-                <p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p>
+                <!-- <p>Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse in magna sint minim officia consectetur nisi commodo ea magna pariatur nisi cillum.</p> -->
 
                 <ul class="skill-bars">
                     <li>
@@ -206,7 +229,7 @@
                     <li>
 
                         <div class="progress percent75"><span>75%</span></div>
-                        <strong></strong>
+                        <strong>Web development</strong>
                     </li>
 
                 </ul>
@@ -260,7 +283,8 @@
                 <h5>Resume</h5>
                 <h1>More of my credentials.</h1>
 
-                <p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
+                <p class="lead">Embarking on the professional journey, I've had the privilege of translating my passion for computer systems and software development into tangible accomplishments. Here's a glimpse into my hands-on experiences, education and the skills
+                    I've cultivated along the way.</p>
 
             </div>
         </div>
@@ -288,12 +312,31 @@
                         </div>
 
                         <div class="timeline-header">
+                            <h3>Applications developer</h3>
+                            <p>January 2024 - Present</p>
+                        </div>
+
+                        <div class="timeline-content">
+                            <h4>Oracle, India <a href="https://www.oracle.com/in/" target="_blank" rel="noopener noreferrer" onmouseover="this.style.color='black'"><i class="fa fa-external-link"></i></a></h4>
+                            <p>Intern at the Communications GBU.</p>
+                        </div>
+
+                    </div>
+                    <!-- /timeline-block -->
+
+                    <div class="timeline-block">
+
+                        <div class="timeline-ico">
+                            <i class="fa fa-briefcase"></i>
+                        </div>
+
+                        <div class="timeline-header">
                             <h3>Research student</h3>
                             <p>November 2023 - Present</p>
                         </div>
 
                         <div class="timeline-content">
-                            <h4>Instrumentation and Control Engineering department, MIT, Manipal</h4>
+                            <h4>Instrumentation and Control Engineering department, MIT, Manipal <a href="https://www.manipal.edu/mit/research.html" target="_blank" rel="noopener noreferrer" onmouseover="this.style.color='black'"><i class="fa fa-external-link"></i></a></h4>
                             <p> Nonlinear Model Predictive Controller with Machine Learning technologies using IoT interface.</p>
                         </div>
 
@@ -312,7 +355,7 @@
                         </div>
 
                         <div class="timeline-content">
-                            <h4>Samsung, PRISM</h4>
+                            <h4>Samsung, PRISM <a href="https://www.samsungprism.com/" target="_blank" rel="noopener noreferrer" onmouseover="this.style.color='black'"><i class="fa fa-external-link"></i></a></h4>
                             <p> Development of Security aware Code Assistance.</p>
                         </div>
 
@@ -327,11 +370,11 @@
 
                         <div class="timeline-header">
                             <h3>Firmware development Intern</h3>
-                            <p>June 2023 - Julu 2023</p>
+                            <p>June 2023 - July 2023</p>
                         </div>
 
                         <div class="timeline-content">
-                            <h4>Accio Robotics</h4>
+                            <h4>Accio Robotics <a href="https://acciorobotics.com/" target="_blank" rel="noopener noreferrer" onmouseover="this.style.color='black'"><i class="fa fa-external-link"></i></a></h4>
                             <p>Developed Put-To-Light module for warehouse applications, and collaborated in firmware programming for the modules of the warehouse management bot.</p>
                         </div>
 
@@ -350,7 +393,7 @@
                         </div>
 
                         <div class="timeline-content">
-                            <h4>Defence Systems, Larsen & Toubro</h4>
+                            <h4>Defence Systems, Larsen & Toubro <a href="https://www.linkedin.com/company/defence-systems-larsen-&-toubro/?originalSubdomain=in" target="_blank" rel="noopener noreferrer" onmouseover="this.style.color='black'"><i class="fa fa-external-link"></i></a></h4>
                             <p> Developed modules for the flight software and sensor data test facility. Also underwent training process to understand the flight software development process for space applications.
                             </p>
                         </div>
@@ -468,26 +511,24 @@
 
                             <div class="timeline-content">
                                 <h4>Manipal Institute of Technology, Manipal</h4>
-                                <p>Bachelor of Technology in Computer Science & Engineering, Minor Specialization in Big data.</p>
+                                <p>Bachelor of Technology in Computer Science & Engineering, Minor Specialization in Big data with a CGPA of 9.34.</p>
                                 <p>
                                     <ul>
                                         <dl>
                                             <dt>
-                                            Embedded Systems Engineer, Parikshit Satellite Student Project
-                                            </dt>
+                                            Embedded Systems Engineer, Parikshit Satellite Student Project <a href="https://www.instagram.com/parikshitsatellite/" style="color:#FF5757;" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link"></i></a>
                                             <dd>
-                                                Collaborated in the building a 2U nano-satellite, demonstrating a comprehensive understanding of the overall flow of the data (telemetry and telecommands) in the system as well as system and ground station. Knowledge of communication protocols I2C, SPI,
-                                                and UART. Programmed the drivers for sensors, by establishing the protocols between peripherals and the micro-controller. Led the On-Board Data Handling Subsystem overseeing and managing the workflow of
-                                                the subsystem.
+                                                Collaborated in the building a 2U nano-satellite, demonstrating a comprehensive understanding of the overall flow of the data (telemetry and telecommands) in the system as well as system and ground station. Programmed the drivers for sensors, by establishing
+                                                the protocols between peripherals and the micro-controller. Led the On-Board Data Handling Subsystem overseeing and managing the workflow of the subsystem.
                                             </dd>
                                         </dl>
                                         <dl>
                                             <dt>
-                                            Data Analyst, International Association for the Exchange of Students for Technical Experience(IAESTE)
+                                            Data Analyst, International Association for the Exchange of Students for Technical Experience(IAESTE) <a href="https://iaeste.in/manipalmu/" style="color:#FF5757;" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link"></i></a>
                                         </dt>
                                             <dd>
                                                 Responsible for managing the organization's data and implementing automation using Google sheets and Apps script streamline processes and significantly reduce manual tasks. As a member of the Junior body, assumed responsibility for managing organizational
-                                                tasks by overseeing the local committee composed of 50 students
+                                                tasks by overseeing the local committee composed of 50 students. Managed the onboarding of the interns and organised events.
                                             </dd>
                                         </dl>
                                     </ul>
@@ -539,7 +580,9 @@
                 <h5>Portfolio</h5>
                 <h1>Check Out Some of My Works.</h1>
 
-                <p class="lead">.</p>
+                <p class="lead">Demonstrating versatility in my skill set, I've undertaken diverse projects encompassing firmware development, web development, college projects. Each project reflects my commitment to innovation and proficiency in tackling multifaceted
+                    challenges.
+                </p>
                 <p>To check all of my projects follow me at
                     <br><a href="https://github.com/Sanj24Dev" class="doi-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
                     <a href="https://www.kaggle.com/sanjanaganeshnayak" class="doi-btn" target="_blank" rel="noopener noreferrer">Kaggle</a></p>
@@ -987,12 +1030,14 @@
                     </div>
                     <!-- /stat -->
 
-                    <div id="modal-cert" class="popup-modal slider mfp-hide">
+                    <div id="modal-cert" class="popup-cert-modal slider mfp-hide">
 
                         <div class="cert-description-box">
                             <h1>Certificates</h1>
-                            <!-- <p>The TCP packets captured through Wireshark are filtered out based on the TCP flags, as stated in the input.</p> -->
-                            <!-- <div class="categories">Packet Sniffing</div> -->
+                            <div class="link-box">
+                                <a href="#" class="popup-modal-dismiss"><i class="fa fa-times"></i></a>
+
+                            </div>
                         </div>
 
                         <div style="background-color: #ea9999;">
@@ -1131,10 +1176,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="link-box">
-                            <!-- <a href="https://github.com/Sanj24Dev/tcp_filter" target="_blank" rel="noopener noreferrer">View the project</a> -->
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>
+
                     </div>
                 </div>
                 <!-- /stats-list -->
@@ -1158,8 +1200,10 @@
                 <h5>Contact</h5>
                 <h1>I'd Love To Hear From You.</h1>
 
-                <p class="lead">Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.</p>
-
+                <p class="lead">The best way to get my attention is to mail me your thoughts and comments.</p>
+                <div style="display: flex; justify-content: center; align-items: center;"><a href="mailto:sanjanagn24@gmail.com?
+                &subject=Hey, I visited your webpage!
+                &body=Add what you want to suggest" target="_blank" rel="noopener noreferrer" class="button-contact">Contact Me</a></div>
             </div>
         </div>
         <!-- /section-intro -->
@@ -1169,7 +1213,7 @@
             <div class="col-twelve">
 
                 <!-- form -->
-                <form name="contactForm" id="contactForm" method="post" action="">
+                <!-- <form name="contactForm" id="contactForm" method="post" action="">
                     <fieldset>
 
                         <div class="form-field">
@@ -1185,7 +1229,7 @@
                             <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10" cols="50" required=""></textarea>
                         </div>
                         <div class="form-field">
-                            <button class="submitform">Submit</button>
+                            <button type="submit" class="submitform">Submit</button>
                             <div id="submit-loader">
                                 <div class="text-loader">Sending...</div>
                                 <div class="s-loader">
@@ -1197,7 +1241,8 @@
                         </div>
 
                     </fieldset>
-                </form>
+                </form> -->
+
                 <!-- Form End -->
 
                 <!-- contact-warning -->
@@ -1227,22 +1272,22 @@
             <div class="col-six tab-full pull-right social">
 
                 <ul class="footer-social">
-                    <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                    <li><a href="#"><i class="fa fa-behance"></i></a></li>
-                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
-                    <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/sanjana-g-nayak/"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="mailto:sanjanagn24@gmail.com"><i class="fa fa-envelope"></i></a></li>
+                    <li><a href="https://github.com/Sanj24Dev"><i class="fa fa-github"></i></a></li>
+                    <!-- <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
+                    <li><a href="https://www.instagram.com/sanjana___borkar/"><i class="fa fa-instagram"></i></a></li>
                 </ul>
 
             </div>
 
-            <div class="col-eight tab-full">
+            <!-- <div class="col-eight tab-full">
                 <div class="copyright">
                     <span>© Copyright 2018 </span>
                     <span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>
                     <span>Distributed by <a href="https://themewagon.com/">themewagon</a></span>
                 </div>
-            </div>
+            </div> -->
 
             <div id="go-top">
                 <a class="smoothscroll" title="Back to Top" href="#top"><i class="fa fa-long-arrow-up"></i></a>
