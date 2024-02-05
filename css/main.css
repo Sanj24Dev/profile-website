@@ -1960,18 +1960,15 @@ header .logo a {
 
 @media only screen and (max-width:768px) {
     .intro-info img {
-        height: 7.8rem;
-        width: 7.8rem;
+        height: 10rem;
+        width: 10rem;
     }
     .intro-info .lead {
-        padding-left: 11rem;
+        padding-left: 13rem;
     }
     .about-content .info-list,
     .about-content .skill-bars {
         margin-bottom: 4.2rem;
-    }
-    .info-list {
-        text-align: center;
     }
     .button-section .button {
         width: 100%;
@@ -1979,6 +1976,16 @@ header .logo a {
     }
     .button-section [class*="col-"] .button:first-child {
         margin-right: 0;
+    }
+    .info-list li {
+        display: flex;
+    }
+    .about-content .info-list li span {
+        line-height: 3rem;
+        margin-left: 0.7rem;
+    }
+    #copyIcon {
+        line-height: 3rem;
     }
 }
 
@@ -1988,14 +1995,25 @@ header .logo a {
         margin-top: 3rem;
     }
     .intro-info img {
-        height: 6.6rem;
-        width: 6.6rem;
+        height: 11rem;
+        width: 11rem;
         float: none;
         display: inline-block;
     }
     .intro-info .lead {
         padding-left: 0;
-        text-align: center;
+        padding-top: 0.7rem;
+        text-align: justify;
+    }
+    .info-list {
+        text-align: left;
+    }
+    .webLinkCopy {
+        display: flex;
+        flex-direction: column;
+    }
+    .about-content .info-list .webLinkCopy span {
+        margin-left: 0rem;
     }
 }
 
@@ -2213,6 +2231,9 @@ dt {
     #resume .timeline-header,
     #resume .timeline-content {
         padding-left: 5.5rem;
+    }
+    #resume .timeline-content dd {
+        margin-left: 0rem;
     }
 }
 
@@ -3019,7 +3040,7 @@ footer .row {
 }
 
 footer .social {
-    text-align: right;
+    text-align: center;
 }
 
 footer .footer-social {
