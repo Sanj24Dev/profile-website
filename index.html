@@ -30,8 +30,9 @@
    ================================================== -->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
     <script>
         window.addEventListener('scroll', function() {
             var scrollPosition = window.scrollY;
@@ -70,11 +71,11 @@
                 <ul class="main-navigation">
                     <li class="current"><a class="smoothscroll" href="#intro" title="">Home</a></li>
                     <li><a class="smoothscroll" href="#about" title="">About</a></li>
-                    <li><a class="smoothscroll" href="#resume" title="">Resume</a></li>
                     <li><a class="smoothscroll" href="#portfolio" title="">Portfolio</a></li>
-                    <!-- <li><a class="smoothscroll"  href="#services" title="">Services</a></li>					 -->
+                    <li><a class="smoothscroll" href="#resume" title="">Experience</a></li>
+                    <li><a class="smoothscroll" href="#stats" title="">Skillset</a></li>
                     <li><a class="smoothscroll" href="#contact" title="">Contact</a></li>
-                    <li><a href="styles.html" title="">Style Demo</a></li>
+                    <!-- <li><a href="styles.html" title="">Style Demo</a></li> -->
                 </ul>
             </nav>
         </div>
@@ -113,11 +114,11 @@
         <!-- /intro-content -->
 
         <ul class="intro-social">
-            <li><a href="https://www.linkedin.com/in/sanjana-g-nayak/"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="mailto:sanjanagn24@gmail.com"><i class="fa fa-envelope"></i></a></li>
-            <li><a href="https://github.com/Sanj24Dev"><i class="fa fa-github"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/sanjana-g-nayak/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="mailto:sanjanagn24@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope"></i></a></li>
+            <li><a href="https://github.com/Sanj24Dev" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a></li>
             <!-- <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
-            <li><a href="https://www.instagram.com/sanjana___borkar/"><i class="fa fa-instagram"></i></a></li>
+            <li><a href="https://www.instagram.com/sanjana___borkar/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a></li>
         </ul>
         <!-- /intro-social -->
 
@@ -139,8 +140,9 @@
 
                     <img src="images/profile-pic-2.jpg" alt="Profile Picture">
 
-                    <p class="lead">Hey there, I'm Sanjana Ganesh Nayak, a soon-to-be college grad. I find solace in the pages of books and the art of sketching, particularly bringing cartoon characters to life. I'm all about chasing challenges and solving problems,
-                        where each experience and insight contributes to the unfolding tapestry of my professional narrative.</p>
+                    <p class="lead">Hey there, I'm Sanjana Ganesh Nayak, a soon-to-be college grad. I find solace in the pages of books and sketching. I'm all about chasing challenges and solving engineering problems, where each experience and insight contributes to
+                        the unfolding tapestry of my professional narrative in IoT and Embedded systems.
+                    </p>
                 </div>
 
             </div>
@@ -152,7 +154,7 @@
             <div class="col-six tab-full">
 
                 <h3>Profile</h3>
-                <p>I am a final-year engineering student with a specific interest in automation and robotics. My expertise lies in firmware development, and I possess hands-on experience in crafting software for embedded systems.</p>
+                <p>I am a final-year engineering student with a specific interest in Automation and IoT. My expertise lies in firmware development, and I have hands-on experience in designing software for embedded systems.</p>
 
                 <ul class="info-list">
                     <li>
@@ -235,6 +237,22 @@
                 </ul>
                 <!-- /skill-bars -->
 
+                <!-- All skills -->
+                <div class="bgrid stat stat-popup">
+                    <a href="#modal-tech" class="overlay">
+                        <div class="icon-part">
+                            <i class="icon-cube"></i>
+                        </div>
+
+                        <h3 class="stat-count">
+                            View
+                        </h3>
+
+                        <h5 class="stat-title">
+                            All skills
+                        </h5>
+                    </a>
+                </div>
             </div>
 
         </div>
@@ -273,9 +291,372 @@
     <!-- /process-->
 
 
+
+    <!-- Portfolio Section
+   ================================================== -->
+    <section id="portfolio">
+
+        <div class="row section-intro">
+            <div class="col-twelve">
+
+                <h5>Portfolio</h5>
+                <h1>Check Out Some of My Works.</h1>
+
+                <p class="lead">Demonstrating versatility in my skill set, I've undertaken diverse projects encompassing firmware development, web development, college projects. Each project reflects my commitment to innovation and proficiency in tackling multifaceted
+                    challenges.
+                </p>
+                <p>To check all of my projects follow me at
+                    <br><a href="https://github.com/Sanj24Dev" class="doi-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+                    <a href="https://www.kaggle.com/sanjanaganeshnayak" class="doi-btn" target="_blank" rel="noopener noreferrer">Kaggle</a></p>
+            </div>
+        </div>
+        <!-- /section-intro-->
+
+        <!-- filters -->
+        <div class="filters">
+            <ul>
+                <li class="active" data-filter="*">All</li>
+                <li data-filter=".embedded">Embedded systems</li>
+                <li data-filter=".ml">AI/ML</li>
+                <li data-filter=".sys">Systems programming</li>
+                <li data-filter=".dev">Web development</li>
+            </ul>
+        </div>
+
+        <div class="blue-section">
+            <div class="filters-content">
+                <div class="row grid block-1-3 block-mob-full stack">
+                    <div class="bgrid folio-item all embedded">
+                        <div class="item-wrap">
+                            <img src="images/portfolio/temp.png" alt="temp">
+                            <a href="#modal-01" class="overlay">
+                                <div class="folio-item-table">
+                                    <div class="folio-item-cell">
+                                        <h3 class="folio-title">Temperature control</h3>
+                                        <span class="folio-types">
+		     					       	  Embedded Programming
+		     					      </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- </div>
+                <div class="row block-1-3 block-mob-full stack"> -->
+                    <div class="bgrid folio-item all embedded">
+                        <div class="item-wrap">
+                            <img src="images/portfolio/led.png" alt="led">
+                            <a href="#modal-02" class="overlay">
+                                <div class="folio-item-table">
+                                    <div class="folio-item-cell">
+                                        <h3 class="folio-title">Addressable LED</h3>
+                                        <span class="folio-types">
+		     					       	  Firmware development
+		     					      </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bgrid folio-item all sys">
+                        <div class="item-wrap">
+                            <img src="images/portfolio/reach.png" alt="Reach">
+                            <a href="#modal-03" class="overlay">
+                                <div class="folio-item-table">
+                                    <div class="folio-item-cell">
+                                        <h3 class="folio-title">Reach</h3>
+                                        <span class="folio-types">
+                                         Concept Game
+                                    </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bgrid folio-item all sys">
+                        <div class="item-wrap">
+                            <img src="images/portfolio/edge.png" alt="edge">
+                            <a href="#modal-04" class="overlay">
+                                <div class="folio-item-table">
+                                    <div class="folio-item-cell">
+                                        <h3 class="folio-title">Edge detection</h3>
+                                        <span class="folio-types">
+                                              Parallel Computing
+                                       </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bgrid folio-item all ml">
+                        <div class="item-wrap">
+                            <img src="images/portfolio/malware.png" alt="malware">
+                            <a href="#modal-05" class="overlay">
+                                <div class="folio-item-table">
+                                    <div class="folio-item-cell">
+                                        <h3 class="folio-title">Malware detection</h3>
+                                        <span class="folio-types">
+		     					       	  Deep Learning
+		     					      </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+                    <!-- </div>
+                <div class="row block-1-3 block-mob-full stack"> -->
+                    <div class="bgrid folio-item all sys">
+                        <div class="item-wrap">
+                            <img src="images/portfolio/file.png" alt="file">
+                            <a href="#modal-06" class="overlay">
+                                <div class="folio-item-table">
+                                    <div class="folio-item-cell">
+                                        <h3 class="folio-title">Distributed File System</h3>
+                                        <span class="folio-types">
+		     					       	  Distributed Systems
+		     					      </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bgrid folio-item all dev">
+                        <div class="item-wrap">
+                            <img src="images/portfolio/roots.png" alt="roots">
+                            <a href="#modal-07" class="overlay">
+                                <div class="folio-item-table">
+                                    <div class="folio-item-cell">
+                                        <h3 class="folio-title">Roots Haircare</h3>
+                                        <span class="folio-types">
+		     					       	  Web Development
+		     					      </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bgrid folio-item all sys">
+                        <div class="item-wrap">
+                            <img src="images/portfolio/tcp.png" alt="tcp">
+                            <a href="#modal-08" class="overlay">
+                                <div class="folio-item-table">
+                                    <div class="folio-item-cell">
+                                        <h3 class="folio-title">TCP Filter</h3>
+                                        <span class="folio-types">
+		     					       	  Computer Networks
+		     					      </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <script>
+                var $grid = $('.grid').isotope({
+                    itemSelector: '.all',
+                    layoutMode: 'fitRows'
+                });
+                $('.filters ul li').click(function() {
+                    $('.filters ul li').removeClass('active');
+                    $(this).addClass('active');
+
+                    var data = $(this).attr('data-filter');
+                    $grid.isotope({
+                        filter: data
+                    })
+                });
+            </script>
+
+            <!-- modal popups - begin
+	        ============================================================= -->
+            <div id="modal-01" class="popup-modal slider mfp-hide">
+
+                <div class="media">
+                    <img src="images/portfolio/modals/m-temp.png" alt="" />
+                </div>
+
+                <div class="description-box">
+                    <h4>Temperature control</h4>
+                    <p>Developed firmware for a closed loop temperature control system in a 3D Printer.</p>
+
+                    <div class="categories">Firmware programming, Embedded C</div>
+                </div>
+
+                <div class="link-box">
+                    <a href="https://github.com/Sanj24Dev/temperature-control" target="_blank" rel="noopener noreferrer">View the project</a>
+                    <a href="#" class="popup-modal-dismiss">Close</a>
+                </div>
+
+            </div>
+            <!-- /modal-01 -->
+
+            <div id="modal-02" class="popup-modal slider mfp-hide">
+
+                <div class="media">
+                    <img src="images/portfolio/modals/m-led.png" alt="" />
+                </div>
+
+                <div class="description-box">
+                    <h4>Addressable LED</h4>
+                    <p>Developed firmware for addressable LED, with customised functions</p>
+
+                    <div class="categories">Firmware programming, Embedded C</div>
+                </div>
+
+                <div class="link-box">
+                    <a href="https://github.com/Sanj24Dev/ws2812b-addressableLED-firmware" target="_blank" rel="noopener noreferrer">View the project</a>
+                    <a href="#" class="popup-modal-dismiss">Close</a>
+                </div>
+
+            </div>
+            <!-- /modal-02 -->
+
+            <div id="modal-03" class="popup-modal slider mfp-hide">
+
+                <div class="media">
+                    <img src="images/portfolio/modals/m-reach.png" alt="" />
+                </div>
+
+                <div class="description-box">
+                    <h4>Reach</h4>
+                    <p>Reach is a multi-level game. Each game is developed using Operating System concepts.</p>
+
+                    <div class="categories">Python, Linux, Bash</div>
+                </div>
+
+                <div class="link-box">
+                    <a href="https://github.com/Sanj24Dev/Reach" target="_blank" rel="noopener noreferrer">View the project</a>
+                    <a href="#" class="popup-modal-dismiss">Close</a>
+                </div>
+
+            </div>
+            <!-- /modal-03 -->
+
+            <div id="modal-04" class="popup-modal slider mfp-hide">
+
+                <div class="media">
+                    <img src="images/portfolio/modals/m-edge.png" alt="" />
+                </div>
+
+                <div class="description-box">
+                    <h4>Edge detection</h4>
+                    <p>Identifying the edges in the image using Sobel operator. The project makes use of CUDA programming.</p>
+
+                    <div class="categories">Parallel computing, CUDA, C programming</div>
+                </div>
+
+                <div class="link-box">
+                    <a href="https://github.com/Sanj24Dev/Edge-Detection" target="_blank" rel="noopener noreferrer">View the project</a>
+                    <a href="#" class="popup-modal-dismiss">Close</a>
+                </div>
+
+            </div>
+            <!-- /modal-04 -->
+
+            <div id="modal-05" class="popup-modal slider mfp-hide">
+
+                <div class="media">
+                    <img src="images/portfolio/modals/m-malware.png" alt="" />
+                </div>
+
+                <div class="description-box">
+                    <h4>Malware detection</h4>
+                    <p>Developed a deep neural network model uses the hyperbolic tangent (tanh) activation function and the Nesterov optimizer, trained it on behaviour based dataset, to detect if the file is malicious.</p>
+                    <div class="categories">Deep Learning, Malware, Python</div>
+                </div>
+
+                <div class="link-box">
+                    <a href="https://www.kaggle.com/code/samirkurup/malware-detection-using-dnn-b44d67" target="_blank" rel="noopener noreferrer">View the project</a>
+                    <a href="#" class="popup-modal-dismiss">Close</a>
+                </div>
+
+            </div>
+            <!-- /modal-05 -->
+
+            <div id="modal-06" class="popup-modal slider mfp-hide">
+
+                <div class="media">
+                    <img src="images/portfolio/modals/m-file.png" alt="" />
+                </div>
+
+                <div class="description-box">
+                    <h4>Distributed File System</h4>
+                    <p>Implementing distributed file system by employing file sharding mechanism. The users have to be authorised, and then they can access the file system which consists of 4 servers.</p>
+
+                    <div class="categories">Distributed Systems, File sharding, Python</div>
+                </div>
+
+                <div class="link-box">
+                    <a href="https://github.com/Sanj24Dev/distributed-file-system" target="_blank" rel="noopener noreferrer">View the project</a>
+                    <a href="#" class="popup-modal-dismiss">Close</a>
+                </div>
+
+            </div>
+            <!-- /modal-06 -->
+
+            <div id="modal-07" class="popup-modal slider mfp-hide">
+
+                <div class="media">
+                    <img src="images/portfolio/modals/m-roots.png" alt="" />
+                </div>
+
+                <div class="description-box">
+                    <h4>Roots Haircare</h4>
+                    <p>An e-commerce website to precisely cater to various hair types and offers personalized recommendations through a quiz.</p>
+
+                    <div class="categories">Web Development, Django, Database handling</div>
+                </div>
+
+                <div class="link-box">
+                    <a href="https://github.com/Sanj24Dev/roots-haircare" target="_blank" rel="noopener noreferrer">View the project</a>
+                    <a href="#" class="popup-modal-dismiss">Close</a>
+                </div>
+
+            </div>
+            <!-- /modal-07 -->
+
+
+            <div id="modal-08" class="popup-modal slider mfp-hide">
+
+                <div class="media">
+                    <img src="images/portfolio/modals/m-tcp.png" alt="" />
+                </div>
+
+                <div class="description-box">
+                    <h4>TCP Filter</h4>
+                    <p>The TCP packets captured through Wireshark are filtered out based on the TCP flags, as stated in the input.</p>
+
+                    <div class="categories">Packet Sniffing</div>
+                </div>
+
+                <div class="link-box">
+                    <a href="https://github.com/Sanj24Dev/tcp_filter" target="_blank" rel="noopener noreferrer">View the project</a>
+                    <a href="#" class="popup-modal-dismiss">Close</a>
+                </div>
+
+            </div>
+            <!-- /modal-08 -->
+
+            <!-- modal popups - end
+            ============================================================= -->
+        </div>
+
+
+    </section>
+    <!-- /portfolio -->
+
     <!-- resume Section
    ================================================== -->
-    <section id="resume" class="grey-section">
+    <section id="resume">
 
         <div class="row section-intro">
             <div class="col-twelve">
@@ -312,13 +693,13 @@
                         </div>
 
                         <div class="timeline-header">
-                            <h3>Applications developer</h3>
+                            <h3>Applications developer intern</h3>
                             <p>January 2024 - Present</p>
                         </div>
 
                         <div class="timeline-content">
-                            <h4>Oracle, India <a href="https://www.oracle.com/in/" target="_blank" rel="noopener noreferrer" onmouseover="this.style.color='black'"><i class="fa fa-external-link"></i></a></h4>
-                            <p>Intern at the Communications GBU.</p>
+                            <h4>Communications GBU, Oracle, India <a href="https://www.oracle.com/in/" target="_blank" rel="noopener noreferrer" onmouseover="this.style.color='black'"><i class="fa fa-external-link"></i></a></h4>
+                            <p> Developed a <b>test case using Behave and Selenium</b> modules, to test router functionality, and verified by integration into the test suite.</p>
                         </div>
 
                     </div>
@@ -337,7 +718,7 @@
 
                         <div class="timeline-content">
                             <h4>Instrumentation and Control Engineering department, MIT, Manipal <a href="https://www.manipal.edu/mit/research.html" target="_blank" rel="noopener noreferrer" onmouseover="this.style.color='black'"><i class="fa fa-external-link"></i></a></h4>
-                            <p> Nonlinear Model Predictive Controller with Machine Learning technologies using IoT interface.</p>
+                            <p> Programmed a <b>Nonlinear Model Predictive Controller</b> for batch reactor applications, showing improved control accuracy and efficiency, employing machine learning technologies on a Jetson Nano.</p>
                         </div>
 
                     </div>
@@ -351,12 +732,12 @@
 
                         <div class="timeline-header">
                             <h3>Research Intern</h3>
-                            <p>April 2023 - Present</p>
+                            <p>April 2023 - April 2024</p>
                         </div>
 
                         <div class="timeline-content">
                             <h4>Samsung, PRISM <a href="https://www.samsungprism.com/" target="_blank" rel="noopener noreferrer" onmouseover="this.style.color='black'"><i class="fa fa-external-link"></i></a></h4>
-                            <p> Development of Security aware Code Assistance.</p>
+                            <p> Designed <b>security-aware code assistance</b>, enhancing code reliability and security, by leveraging <b>CodeT5 model</b> and integrating <b>CVE patches</b>.</p>
                         </div>
 
                     </div>
@@ -375,7 +756,7 @@
 
                         <div class="timeline-content">
                             <h4>Accio Robotics <a href="https://acciorobotics.com/" target="_blank" rel="noopener noreferrer" onmouseover="this.style.color='black'"><i class="fa fa-external-link"></i></a></h4>
-                            <p>Developed Put-To-Light module for warehouse applications, and collaborated in firmware programming for the modules of the warehouse management bot.</p>
+                            <p> Developed <b>Put-To-Light module</b> for warehouse applications, and collaborated in firmware programming for the modules of the warehouse management bot.</p>
                         </div>
 
                     </div>
@@ -394,7 +775,7 @@
 
                         <div class="timeline-content">
                             <h4>Defence Systems, Larsen & Toubro <a href="https://www.linkedin.com/company/defence-systems-larsen-&-toubro/?originalSubdomain=in" target="_blank" rel="noopener noreferrer" onmouseover="this.style.color='black'"><i class="fa fa-external-link"></i></a></h4>
-                            <p> Developed modules for the flight software and sensor data test facility. Also underwent training process to understand the flight software development process for space applications.
+                            <p> Built modules for the flight software and <b>sensor data test facility</b>, contributing to reliable software performance, by undergoing training in flight software development for space applications.
                             </p>
                         </div>
 
@@ -435,7 +816,18 @@
 
                         <div class="timeline-content">
                             <h4>Telemedicine and Telehealth in Urology: Uptake, Impact and Barriers to Clinical Adoption</h4>
-                            <!-- <p> Nonlinear Model Predictive Controller with Machine Learning technologies using IoT interface.</p> -->
+                            <section class="accordion">
+                                <input type="checkbox" name="collapse" id="handle1">
+                                <h2 class="handle">
+                                    <label for="handle1">Abstract</label>
+                                </h2>
+                                <div class="content">
+                                    <p>Telemedicine has great potential in urology as a strong medium for providing patients with continuous high-quality urological care despite the hurdles involved in its implementation. Both clinicians and patients are
+                                        crucial factors in determining the success of tele-consults in terms of simplicity of use and overall satisfaction. For it to be successfully incorporated into routine urological practice, rigorous training and
+                                        evidence-based recommendations are lacking. If these issues are addressed, they can provide a significant impetus for future tele-consults in urology and their successful deployment, even beyond the pandemic, to
+                                        assure safer and more environment-friendly patient management.</p>
+                                </div>
+                            </section>
                             <a href="https://doi.org/10.3389/fsurg.2022.911206" class="doi-btn" target="_blank" rel="noopener noreferrer">DOI</a>
                         </div>
 
@@ -455,7 +847,20 @@
 
                         <div class="timeline-content">
                             <h4>Telemedicine and Telehealth in Urology—What Do the 'Patients' Think About It?'</h4>
-                            <!-- <p> Nonlinear Model Predictive Controller with Machine Learning technologies using IoT interface.</p> -->
+                            <section class="accordion">
+                                <input type="checkbox" name="collapse" id="handle2">
+                                <h2 class="handle">
+                                    <label for="handle2">Abstract</label>
+                                </h2>
+                                <div class="content">
+                                    <p>Telemedicine is the delivery of healthcare to patients who are not in the same location as the physician. The practice of telemedicine has a large number of advantages, including cost savings, low chances of nosocomial
+                                        infection, and fewer hospital visits. Teleclinics have been reported to be successful in the post-surgery and post-cancer therapy follow-up, and in offering consulting services for urolithiasis patients. This review
+                                        focuses on identifying the outcomes of the recent studies related to the usage of video consulting in urology centers for hematuria referrals and follow-up appointments for a variety of illnesses, including benign
+                                        prostatic hyperplasia (BPH), kidney stone disease (KSD), and urinary tract infections (UTIs) and found that they are highly acceptable and satisfied. Certain medical disorders can cause embarrassment, social exclusion,
+                                        and also poor self-esteem, all of which can negatively impair health-related quality-of-life. Telemedicine has proven beneficial in such patients and is a reliable, cost-effective patient-care tool, and it has been
+                                        successfully implemented in various healthcare settings and specialties.</p>
+                                </div>
+                            </section>
                             <a href="https://doi.org/10.3389/fsurg.2022.863576" class="doi-btn" target="_blank" rel="noopener noreferrer">DOI</a>
                         </div>
 
@@ -475,7 +880,21 @@
 
                         <div class="timeline-content">
                             <h4>Role of Artificial Intelligence in Detecting Colonic Polyps during Intestinal Endoscopy</h4>
-                            <!-- <p> Nonlinear Model Predictive Controller with Machine Learning technologies using IoT interface.</p> -->
+                            <section class="accordion">
+                                <input type="checkbox" name="collapse" id="handle3">
+                                <h2 class="handle">
+                                    <label for="handle3">Abstract</label>
+                                </h2>
+                                <div class="content">
+                                    <p>With the inter and multi-disciplinary collaboration of the medical community with technologists in conjunction with a disproportionately alarming doctor-patient ratio, it has now become a matter of concern for researchers
+                                        to enhance patient care with advanced technology along with the reduction of burden on medical professionals. Artificial Intelligence (AI) has now been accepted willingly in the healthcare sector, which has led
+                                        to a tremendous increase in computational power and large data handling capabilities and is widely used in gastrointestinal endoscopy. The objective of this review is to explore the state of current literature on
+                                        different AI-based methods applied in intestinal endoscopy for the detection of colonic polyps. A detailed non-systematic literature review was conducted to identify all relevant studies using PubMed/MEDLINE, Scopus,
+                                        EMBASE, and Google Scholar databases. The technique of AI systems, model building steps, and diagnostic measuring techniques are also discussed. In the automated diagnosis of polyps, AI-based platforms have achieved
+                                        clinically acceptable diagnostic efficiency. AI-based methods can be of clinical importance in gastroenterology, and as computing strength and algorithms enhance, the application is likely to grow and expand in
+                                        the field.</p>
+                                </div>
+                            </section>
                             <a href="https://doi.org/10.30919/es8d697" class="doi-btn" target="_blank" rel="noopener noreferrer">DOI</a>
                         </div>
 
@@ -509,27 +928,52 @@
                                 <p>2020 - Present</p>
                             </div>
 
-                            <div class="timeline-content">
+                            <div class="timeline-content education">
                                 <h4>Manipal Institute of Technology, Manipal</h4>
                                 <p>Bachelor of Technology in Computer Science & Engineering, Minor Specialization in Big data with a CGPA of 9.34.</p>
                                 <p>
                                     <ul>
                                         <dl>
-                                            <dt>
-                                            Embedded Systems Engineer, Parikshit Satellite Student Project <a href="https://www.instagram.com/parikshitsatellite/" style="color:#FF5757;" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link"></i></a>
-                                            <dd>
-                                                Collaborated in the building a 2U nano-satellite, demonstrating a comprehensive understanding of the overall flow of the data (telemetry and telecommands) in the system as well as system and ground station. Programmed the drivers for sensors, by establishing
-                                                the protocols between peripherals and the micro-controller. Led the On-Board Data Handling Subsystem overseeing and managing the workflow of the subsystem.
-                                            </dd>
+                                            <section class="accordion">
+                                                <input type="checkbox" name="collapse" id="handle4">
+                                                <h2 class="handle">
+                                                    <label for="handle4">Embedded Systems Engineer, Parikshit Satellite Student Project</label>
+                                                </h2>
+                                                <div class="content">
+                                                    <p>
+                                                        <ul>
+                                                            <li>Collaborated in building a 2U nano-satellite, contributing to the project's development and success.</li>
+                                                            <li>Demonstrated a comprehensive understanding of the overall flow of data, including telemetry and telecommands, within the satellite system and ground station.</li>
+                                                            <li>Programmed drivers for various sensors, establishing protocols between peripherals and the micro-controller to ensure proper functionality.</li>
+                                                            <li>Led the On-Board Data Handling Subsystem, taking charge of overseeing and managing the workflow of this critical subsystem.</li>
+                                                            <li>Played a key role in ensuring efficient data handling and communication processes onboard the satellite, contributing to its operational success.</li>
+                                                            <li><a href="https://www.parikshitspace.in/" style="color:#03AED2;" target="_blank" rel="noopener noreferrer">parikshitspace.in</a></li>
+                                                        </ul>
+
+                                                    </p>
+                                                </div>
+                                            </section>
                                         </dl>
                                         <dl>
-                                            <dt>
-                                            Data Analyst, International Association for the Exchange of Students for Technical Experience(IAESTE) <a href="https://iaeste.in/manipalmu/" style="color:#FF5757;" target="_blank" rel="noopener noreferrer"><i class="fa fa-external-link"></i></a>
-                                        </dt>
-                                            <dd>
-                                                Responsible for managing the organization's data and implementing automation using Google sheets and Apps script streamline processes and significantly reduce manual tasks. As a member of the Junior body, assumed responsibility for managing organizational
-                                                tasks by overseeing the local committee composed of 50 students. Managed the onboarding of the interns and organised events.
-                                            </dd>
+                                            <section class="accordion">
+                                                <input type="checkbox" name="collapse" id="handle5">
+                                                <h2 class="handle">
+                                                    <label for="handle5">Data Analyst, International Association for the Exchange of Students for Technical Experience(IAESTE)</label>
+                                                </h2>
+                                                <div class="content">
+                                                    <p>
+                                                        <ul>
+                                                            <li>Responsible for managing the organization's data and implementing automation using Google Sheets and Apps Script to streamline processes and significantly reduce manual tasks.</li>
+                                                            <li>As a member of the Junior body, assumed responsibility for managing organizational tasks by overseeing the local committee composed of 50 students.</li>
+                                                            <li>Managed the onboarding of interns and organized events to enhance team collaboration and productivity.</li>
+                                                            <li>Desinged posts for social media including Instagram, Facebook, LinkedIn.</li>
+                                                            <li>As part of the design team, collaborated on creating the website design using Figma.</li>
+                                                            <li><a href="https://iaeste.in/manipalmu/" style="color:#03AED2;" target="_blank" rel="noopener noreferrer">iaeste.in/manipalmu</a></li>
+                                                        </ul>
+
+                                                    </p>
+                                                </div>
+                                            </section>
                                         </dl>
                                     </ul>
                                 </p>
@@ -570,354 +1014,6 @@
     <!-- /features -->
 
 
-    <!-- Portfolio Section
-   ================================================== -->
-    <section id="portfolio">
-
-        <div class="row section-intro">
-            <div class="col-twelve">
-
-                <h5>Portfolio</h5>
-                <h1>Check Out Some of My Works.</h1>
-
-                <p class="lead">Demonstrating versatility in my skill set, I've undertaken diverse projects encompassing firmware development, web development, college projects. Each project reflects my commitment to innovation and proficiency in tackling multifaceted
-                    challenges.
-                </p>
-                <p>To check all of my projects follow me at
-                    <br><a href="https://github.com/Sanj24Dev" class="doi-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
-                    <a href="https://www.kaggle.com/sanjanaganeshnayak" class="doi-btn" target="_blank" rel="noopener noreferrer">Kaggle</a></p>
-            </div>
-        </div>
-        <!-- /section-intro-->
-
-        <div class="row portfolio-content">
-
-            <div class="col-twelve">
-
-                <!-- portfolio-wrapper -->
-                <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
-
-                    <div class="bgrid folio-item">
-                        <div class="item-wrap">
-                            <img src="images/portfolio/reach.png" alt="Reach">
-                            <a href="#modal-01" class="overlay">
-                                <div class="folio-item-table">
-                                    <div class="folio-item-cell">
-                                        <h3 class="folio-title">Reach</h3>
-                                        <span class="folio-types">
-		     					       	 Concept Game
-		     					       </span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- /folio-item -->
-
-                    <div class="bgrid folio-item">
-                        <div class="item-wrap">
-                            <img src="images/portfolio/edge.png" alt="edge">
-                            <a href="#modal-02" class="overlay">
-                                <div class="folio-item-table">
-                                    <div class="folio-item-cell">
-                                        <h3 class="folio-title">Edge detection</h3>
-                                        <span class="folio-types">
-		     					       	  Parallel Computing
-		     					      </span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- /folio-item -->
-
-                    <div class="bgrid folio-item">
-                        <div class="item-wrap">
-                            <img src="images/portfolio/malware.png" alt="malware">
-                            <a href="#modal-03" class="overlay">
-                                <div class="folio-item-table">
-                                    <div class="folio-item-cell">
-                                        <h3 class="folio-title">Malware detection</h3>
-                                        <span class="folio-types">
-		     					       	  Deep Learning
-		     					      </span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- /folio-item -->
-
-                    <div class="bgrid folio-item">
-                        <div class="item-wrap">
-                            <img src="images/portfolio/file.png" alt="file">
-                            <a href="#modal-04" class="overlay">
-                                <div class="folio-item-table">
-                                    <div class="folio-item-cell">
-                                        <h3 class="folio-title">Distributed File System</h3>
-                                        <span class="folio-types">
-		     					       	  Distributed Systems
-		     					      </span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- /folio-item -->
-
-                    <div class="bgrid folio-item">
-                        <div class="item-wrap">
-                            <img src="images/portfolio/roots.png" alt="roots">
-                            <a href="#modal-05" class="overlay">
-                                <div class="folio-item-table">
-                                    <div class="folio-item-cell">
-                                        <h3 class="folio-title">Roots Haircare</h3>
-                                        <span class="folio-types">
-		     					       	  Web Development
-		     					      </span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- /folio-item -->
-
-                    <div class="bgrid folio-item">
-                        <div class="item-wrap">
-                            <img src="images/portfolio/temp.png" alt="temp">
-                            <a href="#modal-06" class="overlay">
-                                <div class="folio-item-table">
-                                    <div class="folio-item-cell">
-                                        <h3 class="folio-title">Temperature control</h3>
-                                        <span class="folio-types">
-		     					       	  Embedded Programming
-		     					      </span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- /folio-item -->
-
-                    <div class="bgrid folio-item">
-                        <div class="item-wrap">
-                            <img src="images/portfolio/led.png" alt="led">
-                            <a href="#modal-07" class="overlay">
-                                <div class="folio-item-table">
-                                    <div class="folio-item-cell">
-                                        <h3 class="folio-title">Addressable LED</h3>
-                                        <span class="folio-types">
-		     					       	  Firmware development
-		     					      </span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- /folio-item -->
-
-                    <div class="bgrid folio-item">
-                        <div class="item-wrap">
-                            <img src="images/portfolio/tcp.png" alt="tcp">
-                            <a href="#modal-08" class="overlay">
-                                <div class="folio-item-table">
-                                    <div class="folio-item-cell">
-                                        <h3 class="folio-title">TCP Filter</h3>
-                                        <span class="folio-types">
-		     					       	  Computer Networks
-		     					      </span>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                    <!-- /folio-item -->
-
-                    <!-- modal popups - begin
-	            ============================================================= -->
-                    <div id="modal-01" class="popup-modal slider mfp-hide">
-
-                        <div class="media">
-                            <img src="images/portfolio/modals/m-reach.png" alt="" />
-                        </div>
-
-                        <div class="description-box">
-                            <h4>Reach</h4>
-                            <p>Reach is a multi-level game. Each game is developed using Operating System concepts.</p>
-
-                            <div class="categories">Python, Linux, Bash</div>
-                        </div>
-
-                        <div class="link-box">
-                            <a href="https://github.com/Sanj24Dev/Reach" target="_blank" rel="noopener noreferrer">View the project</a>
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>
-
-                    </div>
-                    <!-- /modal-01 -->
-
-                    <div id="modal-02" class="popup-modal slider mfp-hide">
-
-                        <div class="media">
-                            <img src="images/portfolio/modals/m-edge.png" alt="" />
-                        </div>
-
-                        <div class="description-box">
-                            <h4>Edge detection</h4>
-                            <p>Identifying the edges in the image using Sobel operator. The project makes use of CUDA programming.</p>
-
-                            <div class="categories">Parallel computing, CUDA, C programming</div>
-                        </div>
-
-                        <div class="link-box">
-                            <a href="https://github.com/Sanj24Dev/Edge-Detection" target="_blank" rel="noopener noreferrer">View the project</a>
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>
-
-                    </div>
-                    <!-- /modal-02 -->
-
-                    <div id="modal-03" class="popup-modal slider mfp-hide">
-
-                        <div class="media">
-                            <img src="images/portfolio/modals/m-malware.png" alt="" />
-                        </div>
-
-                        <div class="description-box">
-                            <h4>Malware detection</h4>
-                            <p>Developed a deep neural network model uses the hyperbolic tangent (tanh) activation function and the Nesterov optimizer, trained it on behaviour based dataset, to detect if the file is malicious.</p>
-                            <div class="categories">Deep Learning, Malware, Python</div>
-                        </div>
-
-                        <div class="link-box">
-                            <a href="#" target="_blank" rel="noopener noreferrer">View the project</a>
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>
-
-                    </div>
-                    <!-- /modal-03 -->
-
-                    <div id="modal-04" class="popup-modal slider mfp-hide">
-
-                        <div class="media">
-                            <img src="images/portfolio/modals/m-file.png" alt="" />
-                        </div>
-
-                        <div class="description-box">
-                            <h4>Distributed File System</h4>
-                            <p>Implementing distributed file system by employing file sharding mechanism. The users have to be authorised, and then they can access the file system which consists of 4 servers.</p>
-
-                            <div class="categories">Distributed Systems, File sharding, Python</div>
-                        </div>
-
-                        <div class="link-box">
-                            <a href="https://github.com/Sanj24Dev/distributed-file-system" target="_blank" rel="noopener noreferrer">View the project</a>
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>
-
-                    </div>
-                    <!-- /modal-04 -->
-
-                    <div id="modal-05" class="popup-modal slider mfp-hide">
-
-                        <div class="media">
-                            <img src="images/portfolio/modals/m-roots.png" alt="" />
-                        </div>
-
-                        <div class="description-box">
-                            <h4>Roots Haircare</h4>
-                            <p>An e-commerce website to precisely cater to various hair types and offers personalized recommendations through a quiz.</p>
-
-                            <div class="categories">Web Development, Django, Database handling</div>
-                        </div>
-
-                        <div class="link-box">
-                            <a href="https://github.com/Sanj24Dev/roots-haircare" target="_blank" rel="noopener noreferrer">View the project</a>
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>
-
-                    </div>
-                    <!-- /modal-05 -->
-
-                    <div id="modal-06" class="popup-modal slider mfp-hide">
-
-                        <div class="media">
-                            <img src="images/portfolio/modals/m-temp.png" alt="" />
-                        </div>
-
-                        <div class="description-box">
-                            <h4>Temperature control</h4>
-                            <p>Developed firmware for a closed loop temperature control system in a 3D Printer.</p>
-
-                            <div class="categories">Firmware programming, Embedded C</div>
-                        </div>
-
-                        <div class="link-box">
-                            <a href="https://github.com/Sanj24Dev/temperature-control" target="_blank" rel="noopener noreferrer">View the project</a>
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>
-
-                    </div>
-                    <!-- /modal-06 -->
-
-                    <div id="modal-07" class="popup-modal slider mfp-hide">
-
-                        <div class="media">
-                            <img src="images/portfolio/modals/m-led.png" alt="" />
-                        </div>
-
-                        <div class="description-box">
-                            <h4>Addressable LED</h4>
-                            <p>Developed firmware for addressable LED, with customised functions</p>
-
-                            <div class="categories">Firmware programming, Embedded C</div>
-                        </div>
-
-                        <div class="link-box">
-                            <a href="https://github.com/Sanj24Dev/ws2812b-addressableLED-firmware" target="_blank" rel="noopener noreferrer">View the project</a>
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>
-
-                    </div>
-                    <!-- /modal-07 -->
-
-                    <div id="modal-08" class="popup-modal slider mfp-hide">
-
-                        <div class="media">
-                            <img src="images/portfolio/modals/m-tcp.png" alt="" />
-                        </div>
-
-                        <div class="description-box">
-                            <h4>TCP Filter</h4>
-                            <p>The TCP packets captured through Wireshark are filtered out based on the TCP flags, as stated in the input.</p>
-
-                            <div class="categories">Packet Sniffing</div>
-                        </div>
-
-                        <div class="link-box">
-                            <a href="https://github.com/Sanj24Dev/tcp_filter" target="_blank" rel="noopener noreferrer">View the project</a>
-                            <a href="#" class="popup-modal-dismiss">Close</a>
-                        </div>
-
-                    </div>
-                    <!-- /modal-08 -->
-
-                    <!-- modal popups - end
-	            ============================================================= -->
-
-                </div>
-                <!-- /portfolio-wrapper -->
-
-            </div>
-            <!-- /twelve -->
-
-        </div>
-        <!-- /portfolio-content -->
-
-    </section>
-    <!-- /portfolio -->
-
-
     <!-- stats Section
    ================================================== -->
     <section id="stats" class="count-up">
@@ -925,34 +1021,16 @@
         <div class="row">
             <div class="col-twelve">
 
-                <div class="block-1-6 block-s-1-3 block-tab-1-2 block-mob-full stats-list">
+                <div class="block-1-4 block-s-1-2 block-tab-1-2 block-mob-full stats-list">
 
-                    <div class="bgrid stat">
-                        <a href="#portfolio" class="smoothscroll">
-                            <div class="icon-part">
-                                <i class="icon-pencil-ruler"></i>
-                            </div>
-
-                            <h3 class="stat-count">
-                                0
-                            </h3>
-
-                            <h5 class="stat-title">
-                                Projects Completed
-                            </h5>
-                        </a>
-                    </div>
-
-                    <!-- /stat -->
-
-                    <div class="bgrid stat stat-cert">
+                    <div class="bgrid stat stat-popup">
                         <a href="#modal-cert" class="overlay">
                             <div class="icon-part">
                                 <i class="icon-badge"></i>
                             </div>
 
                             <h3 class="stat-count">
-                                0
+                                8
                             </h3>
 
                             <h5 class="stat-title">
@@ -969,64 +1047,49 @@
                         </div>
 
                         <h3 class="stat-count">
-                            0
+                            13
                         </h3>
 
                         <h5 class="stat-title">
-                            Books Read
+                            Book Challenge
                         </h5>
 
                     </div>
+
+
                     <!-- /stat -->
 
-                    <div class="bgrid stat">
+                    <div class="bgrid stat stat-popup">
+                        <a href="#modal-tech" class="overlay">
+                            <div class="icon-part">
+                                <i class="icon-cube"></i>
+                            </div>
 
-                        <div class="icon-part">
-                            <i class="icon-clock"></i>
-                        </div>
+                            <h3 class="stat-count">
+                                View
+                            </h3>
 
-                        <h3 class="stat-count">
-                            0
-                        </h3>
-
-                        <h5 class="stat-title">
-                            Hours
-                        </h5>
-
+                            <h5 class="stat-title">
+                                Technical skills
+                            </h5>
+                        </a>
                     </div>
                     <!-- /stat -->
 
-                    <div class="bgrid stat">
+                    <div class="bgrid stat stat-popup">
+                        <a href="#modal-lang" class="overlay">
+                            <div class="icon-part">
+                                <i class="icon-desktop"></i>
+                            </div>
 
-                        <div class="icon-part">
-                            <i class="icon-desktop"></i>
-                        </div>
+                            <h3 class="stat-count">
+                                0
+                            </h3>
 
-                        <h3 class="stat-count">
-                            0
-                        </h3>
-
-                        <h5 class="stat-title">
-                            Coding languages
-                        </h5>
-
-                    </div>
-                    <!-- /stat -->
-
-                    <div class="bgrid stat">
-
-                        <div class="icon-part">
-                            <i class="icon-cup"></i>
-                        </div>
-
-                        <h3 class="stat-count">
-                            0
-                        </h3>
-
-                        <h5 class="stat-title">
-                            Coffee Cups
-                        </h5>
-
+                            <h5 class="stat-title">
+                                Coding languages
+                            </h5>
+                        </a>
                     </div>
                     <!-- /stat -->
 
@@ -1040,8 +1103,8 @@
                             </div>
                         </div>
 
-                        <div style="background-color: #ea9999;">
-                            <h2>Programming language certificates</h2>
+                        <div style="background-color: #03AED2;">
+                            <h2 style="color: #fff">Programming language certificates</h2>
                             <!-- Carousel -->
                             <div class="row cert-content">
 
@@ -1075,10 +1138,10 @@
                                         <!-- <span class="icon"><i class="icon-earth"></i></span> -->
                                         <img src="images\certificates\coursera.png">
                                         <div class="cert-name">
-                                            <h5>Introduction to C</h5>
+                                            <h5>C for Everyone: Programming fundamentals</h5>
                                             <div>
-                                                <a href="" class="cert-btn" target="_blank" rel="noopener noreferrer">Check course</a>
-                                                <a href="" class="cert-btn" target="_blank" rel="noopener noreferrer">Certificate</a>
+                                                <a href="https://www.coursera.org/learn/c-for-everyone" class="cert-btn" target="_blank" rel="noopener noreferrer">Check course</a>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/3KANZGN4GS54?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" class="cert-btn" target="_blank" rel="noopener noreferrer">Certificate</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1087,10 +1150,10 @@
                                         <!-- <span class="icon"><i class="icon-earth"></i></span> -->
                                         <img src="images\certificates\coursera.png">
                                         <div class="cert-name">
-                                            <h5>Internet of Things</h5>
+                                            <h5>C for Everyone:<br>Structured Programming</h5>
                                             <div>
-                                                <a href="" class="cert-btn" target="_blank" rel="noopener noreferrer">Check course</a>
-                                                <a href="" class="cert-btn" target="_blank" rel="noopener noreferrer">Certificate</a>
+                                                <a href="https://www.coursera.org/learn/c-structured-programming" class="cert-btn" target="_blank" rel="noopener noreferrer">Check course</a>
+                                                <a href="https://coursera.org/share/ab766e0b930b8f938800be77b28bdbde" class="cert-btn" target="_blank" rel="noopener noreferrer">Certificate</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1099,10 +1162,10 @@
                                         <!-- <span class="icon"><i class="icon-earth"></i></span> -->
                                         <img src="images\certificates\coursera.png">
                                         <div class="cert-name">
-                                            <h5>Introduction to C</h5>
+                                            <h5>Programming for everybody (Python)</h5>
                                             <div>
-                                                <a href="" class="cert-btn" target="_blank" rel="noopener noreferrer">Check course</a>
-                                                <a href="" class="cert-btn" target="_blank" rel="noopener noreferrer">Certificate</a>
+                                                <a href="https://www.coursera.org/specializations/python" class="cert-btn" target="_blank" rel="noopener noreferrer">Check course</a>
+                                                <a href="https://www.coursera.org/account/accomplishments/verify/4JPP22DXMGYH?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" class="cert-btn" target="_blank" rel="noopener noreferrer">Certificate</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1111,18 +1174,17 @@
                                         <!-- <span class="icon"><i class="icon-earth"></i></span> -->
                                         <img src="images\certificates\coursera.png">
                                         <div class="cert-name">
-                                            <h5>Internet of Things</h5>
+                                            <h5>Python data<br>structures</h5>
                                             <div>
-                                                <a href="" class="cert-btn" target="_blank" rel="noopener noreferrer">Check course</a>
-                                                <a href="" class="cert-btn" target="_blank" rel="noopener noreferrer">Certificate</a>
+                                                <a href="https://www.coursera.org/learn/python-data" class="cert-btn" target="_blank" rel="noopener noreferrer">Check course</a>
+                                                <a href="https://coursera.org/share/5893538160e36d12d8b8fb90f8aa1d35" class="cert-btn" target="_blank" rel="noopener noreferrer">Certificate</a>
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
-                        <div style="background-color: #f9cb9c;">
+                        <div style="background-color: #CAF4FF;">
                             <h2>Awards</h2>
                             <!-- Carousel -->
                             <div class="row cert-content">
@@ -1176,7 +1238,189 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div id="modal-tech" class="popup-cert-modal slider mfp-hide" style="background-color: #03AED2;">
 
+                        <div class="cert-description-box">
+                            <h1 style="color: #fff;">Technical skills</h1>
+                            <div class="link-box">
+                                <a href="#" class="popup-modal-dismiss"><i class="fa fa-times"></i></a>
+                            </div>
+                        </div>
+
+                        <!-- <div style="background-color: #ea9999;"> -->
+                        <!-- <h2>Programming language certificates</h2> -->
+                        <!-- Carousel -->
+                        <div class="row cert-content">
+
+                            <div id="owl-slider" class="owl-carousel cert-list">
+
+                                <div class="cert1">
+                                    <div class="tech-name">
+                                        <h3>Sensor technologies</h3>
+                                        <div class="back">
+                                            STM32 | LPC | Jetson | Arduino | ESP | Gyroscope | ADC
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cert1">
+                                    <div class="tech-name">
+                                        <h3>ML technologies</h3>
+                                        <div>
+                                            Python | Scikit-learn | TensorFlow | DNN | CNN | Reinforcement learning | Transformers | Pandas | NumPy | Jupyter
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cert1">
+                                    <div class="tech-name">
+                                        <h3>Internet of Things</h3>
+                                        <div>
+                                            Embedded C | ARM Assembly | I2C | SPI | UART | Wi-Fi | Bluetooth | MQTT | SQL | OpenCL | CUDA | WireShark | GNS3 | NS2
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cert1">
+                                    <div class="tech-name">
+                                        <h3>Analysers</h3>
+                                        <div>
+                                            Oscilloscope | Logic analyser | Spectrum analyser
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cert1">
+                                    <div class="tech-name">
+                                        <h3>Web development</h3>
+                                        <div>
+                                            HTML | CSS | JS | Responsive design | Git | Java | Django
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cert1">
+                                    <div class="tech-name">
+                                        <h3>Soft skills</h3>
+                                        <div>
+                                            Teamwork | Communication | Interpersonal Skills | Leadership | Presentation Skills
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- </div> -->
+                    </div>
+                    <div id="modal-lang" class="popup-cert-modal slider mfp-hide">
+
+                        <div class="cert-description-box">
+                            <h1>Languages</h1>
+                            <div class="link-box">
+                                <a href="#" class="popup-modal-dismiss"><i class="fa fa-times"></i></a>
+
+                            </div>
+                        </div>
+
+                        <div style="background-color: #03AED2;">
+                            <h2 style="color:#fff">Programming language certificates</h2>
+                            <!-- Carousel -->
+                            <div class="row cert-content">
+
+                                <div id="owl-slider" class="owl-carousel cert-list">
+
+                                    <div class="cert1">
+                                        <!-- <span class="icon"><i class="icon-earth"></i></span> -->
+                                        <img src="images\languages\c lang.png">
+                                        <div class="cert-name">
+                                            <h5>C programming</h5>
+                                            <div>
+                                                <a href="#" class="cert-btn" target="_blank" rel="noopener noreferrer">Best work</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cert1">
+                                        <!-- <span class="icon"><i class="icon-earth"></i></span> -->
+                                        <img src="images\languages\python.png">
+                                        <div class="cert-name">
+                                            <h5>Python programming</h5>
+                                            <div>
+                                                <a href="https://iaeste.in/manipalmu/" class="cert-btn" target="_blank" rel="noopener noreferrer">Best work</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cert1">
+                                        <!-- <span class="icon"><i class="icon-earth"></i></span> -->
+                                        <img src="images\languages\html.png">
+                                        <div class="cert-name">
+                                            <h5>HTML</h5>
+                                            <div>
+                                                <a href="https://iaeste.in/manipalmu/" class="cert-btn" target="_blank" rel="noopener noreferrer">Best work</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cert1">
+                                        <!-- <span class="icon"><i class="icon-earth"></i></span> -->
+                                        <img src="images\languages\css.png">
+                                        <div class="cert-name">
+                                            <h5>CSS</h5>
+                                            <div>
+                                                <a href="https://iaeste.in/manipalmu/" class="cert-btn" target="_blank" rel="noopener noreferrer">Best work</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cert1">
+                                        <!-- <span class="icon"><i class="icon-earth"></i></span> -->
+                                        <img src="images\languages\js.png">
+                                        <div class="cert-name">
+                                            <h5>JS</h5>
+                                            <div>
+                                                <a href="https://iaeste.in/manipalmu/" class="cert-btn" target="_blank" rel="noopener noreferrer">Best work</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cert1">
+                                        <!-- <span class="icon"><i class="icon-earth"></i></span> -->
+                                        <img src="images\languages\sql.png">
+                                        <div class="cert-name">
+                                            <h5>SQL</h5>
+                                            <div>
+                                                <a href="https://iaeste.in/manipalmu/" class="cert-btn" target="_blank" rel="noopener noreferrer">Best work</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cert1">
+                                        <!-- <span class="icon"><i class="icon-earth"></i></span> -->
+                                        <img src="images\certificates\iaeste.png">
+                                        <div class="cert-name">
+                                            <h5>Assembly language</h5>
+                                            <div>
+                                                <a href="https://iaeste.in/manipalmu/" class="cert-btn" target="_blank" rel="noopener noreferrer">Best work</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="cert1">
+                                        <!-- <span class="icon"><i class="icon-earth"></i></span> -->
+                                        <img src="images\certificates\iaeste.png">
+                                        <div class="cert-name">
+                                            <h5>Java programming</h5>
+                                            <div>
+                                                <a href="https://iaeste.in/manipalmu/" class="cert-btn" target="_blank" rel="noopener noreferrer">Best work</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- /stats-list -->
@@ -1272,11 +1516,11 @@
             <div class="col-twelve tab-full social">
 
                 <ul class="footer-social">
-                    <li><a href="https://www.linkedin.com/in/sanjana-g-nayak/"><i class="fa fa-linkedin"></i></a></li>
-                    <li><a href="mailto:sanjanagn24@gmail.com"><i class="fa fa-envelope"></i></a></li>
-                    <li><a href="https://github.com/Sanj24Dev"><i class="fa fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/sanjana-g-nayak/" target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="mailto:sanjanagn24@gmail.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-envelope"></i></a></li>
+                    <li><a href="https://github.com/Sanj24Dev" target="_blank" rel="noopener noreferrer"><i class="fa fa-github"></i></a></li>
                     <!-- <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
-                    <li><a href="https://www.instagram.com/sanjana___borkar/"><i class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://www.instagram.com/sanjana___borkar/" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a></li>
                 </ul>
 
             </div>

@@ -134,7 +134,7 @@
 
     });
 
-    $('.stat-cert a').magnificPopup({
+    $('.stat-popup a').magnificPopup({
 
         type: 'inline',
         fixedContentPos: false,
@@ -143,6 +143,7 @@
         mainClass: 'mfp-fade'
 
     });
+
 
     $(document).on('click', '.popup-modal-dismiss', function(e) {
         e.preventDefault();
