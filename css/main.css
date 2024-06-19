@@ -2514,12 +2514,27 @@ header .logo a {
     #portfolio .folio-title {
         font-size: 2.5rem;
     }
+    #portfolio .block-tab-1-2 .bgrid {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    #portfolio .folio-title {
+        font-size: 2.2rem;
+    }
+    #portfolio .block-tab-1-2 .bgrid {
+        width: 90%;
+    }
 }
 
 @media only screen and (max-width:400px) {
     #portfolio .folio-title {
         font-size: 2.2rem;
     }
+    /* #portfolio .stack .bgrid {
+        width: 90%;
+    } */
 }
 
 
@@ -3558,6 +3573,12 @@ footer .copyright span:last-child::after {
     padding-left: 2rem;
 }
 
+@media only screen and (max-width:500px) {
+    #modal-tech h1 {
+        font-size: 20px;
+    }
+}
+
 
 /* #modal-tech h2 {
      padding-top: 2rem;
@@ -3700,11 +3721,6 @@ footer .copyright span:last-child::after {
         height: 10em;
     }
 } */
-
-
-/* @media only screen and (max-width:600px) {
-
- } */
 
 
 /*# sourceMappingURL=main.css.map */
