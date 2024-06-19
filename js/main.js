@@ -54,10 +54,21 @@
             autoPlay: false,
             itemsCustom: [
                 [0, 1],
-                [700, 2],
+                [500, 2],
+                [700, 3],
                 [960, 4]
             ],
             loop: true,
+        });
+    });
+
+    document.addEventListener("DOMContentLoaded", function() {
+        var cert1 = document.querySelector("#modal-tech .cert1");
+
+        cert1.addEventListener("click", function() {
+            if (window.innerWidth <= 767) {
+                cert1.classList.toggle("is-flipped");
+            }
         });
     });
 
