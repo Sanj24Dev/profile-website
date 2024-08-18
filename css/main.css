@@ -3384,6 +3384,58 @@ footer .copyright span:last-child::after {
     padding-left: 5rem;
 }
 
+#modal-cert ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    align-items: center;
+}
+
+#modal-cert .filters {
+    text-align: center;
+}
+
+#modal-cert .folio-item {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#modal-cert li {
+    list-style: none;
+    display: inline-block;
+    padding: 20px 30px;
+    cursor: pointer;
+    position: relative;
+    color: #357484;
+}
+
+#modal-cert li:after {
+    content: '';
+    display: block;
+    width: calc(0% - 60px);
+    position: absolute;
+    height: 2px;
+    background: #357484;
+    transition: width 350ms ease-out;
+}
+
+#modal-cert li:hover {
+    font-weight: 600;
+}
+
+#modal-cert li:hover:after {
+    width: calc(100% - 60px);
+    transition: width 350ms ease-out;
+}
+
+#modal-cert li.active {
+    font-weight: 600;
+}
+
+#modal-cert li.active:after {
+    width: calc(100% - 60px);
+}
+
 .cert-list {
     margin-bottom: 1.2rem;
     text-align: center;
