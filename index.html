@@ -138,7 +138,7 @@
 
                 <div class="intro-info">
 
-                    <img src="images/profile-pic-2.jpg" alt="Profile Picture">
+                    <img src="images/profile-pic-3.jpeg" alt="Profile Picture">
 
                     <p class="lead">Hey there, I'm Sanjana Ganesh Nayak, currently pursuing my Master's at Georgia Tech. I find solace in the pages of books and sketching. I'm all about chasing challenges and solving engineering problems, where each experience and insight
                         contributes to the unfolding tapestry of my professional narrative in IoT and Embedded systems.
@@ -563,7 +563,16 @@
 
                 <div class="description-box">
                     <h4>SDN Controller Simulation</h4>
-                    <p>An NS-3 module that integrates an SDN (Software Defined Networking) controller for simulating programmable network environments.</p>
+                    <p>
+                        <ul>
+                            <li>Developed a <strong>Software Defined Networking (SDN)</strong> module for <strong>NS-3 (v3.43)</strong>, simulating <strong>OpenFlow-based network control</strong>.</li>
+                            <li>Built core components in <strong>C++</strong>, including <strong>SDN controller</strong>, <strong>SDN switch</strong>, and <strong>flow table logic</strong>.</li>
+                            <li>Configured <strong>NS-3 to support programmable packet forwarding</strong>.</li>
+                            <li>Implemented examples like <code>sdn-one-switch.cc</code> to demonstrate <strong>centralized controller behavior</strong> in a simulated network.</li>
+                            <li>Packaged the project with clear structure and <strong>CMake build scripts</strong> to ease setup and extensibility.</li>
+                            <li>Published on GitHub for open-source contribution and reproducibility in SDN research and coursework.</li>
+                        </ul>
+                    </p>
 
                     <div class="categories">C++ programming, Network simulation</div>
                 </div>
@@ -583,7 +592,16 @@
 
                 <div class="description-box">
                     <h4>3D Chess</h4>
-                    <p>A 3D-rendered chess game featuring immersive visuals and a user-versus-Komodo chess engine mode</p>
+                    <p>
+                        <ul>
+                            <li>Developed a fully interactive <strong>3D chess game</strong> using <strong>OpenGL</strong> and <strong>ASSIMP</strong> for realistic model rendering.</li>
+                            <li>Integrated the <strong>Komodo chess engine</strong> using the <strong>UCI protocol</strong> for move generation and AI-based gameplay.</li>
+                            <li>Implemented smooth piece movements with animations (e.g., <strong>sliding pawns</strong>, <strong>knight arcs</strong>).</li>
+                            <li>Handled <strong>piece captures</strong> with real-time removal from the scene for immersive feedback.</li>
+                            <li>Enabled <strong>user input in UCI format</strong> via terminal, interfacing directly with the engine.</li>
+                            <li>Built and configured project using <strong>CMake</strong> and <strong>GLFW</strong> for cross-platform execution.</li>
+                        </ul>
+                    </p>
 
                     <div class="categories">C++ programming, OpenGL</div>
                 </div>
@@ -603,7 +621,16 @@
 
                 <div class="description-box">
                     <h4>CMP memory system simulator</h4>
-                    <p>A Chip Multiprocessor memory system simulator that includes cache and DRAM modeling and extends to multicore processors.</p>
+                    <p>
+                        <ul>
+                            <li>Built a modular <strong>chip multiprocessor memory system simulator</strong> in <strong>C++</strong> to model cache hierarchies, DRAM, and multicore interactions.</li>
+                            <li>Supported simulation modes ranging from basic <strong>L1 cache hit/miss estimation</strong> to advanced <strong>dynamic cache partitioning</strong> in <strong>dual-core processors</strong>.</li>
+                            <li>Implemented <strong>DRAM modeling with row buffers</strong> supporting <strong>open-page</strong> and <strong>close-page policies</strong>.</li>
+                            <li>Created command-line configuration support for <strong>cache line size</strong>, <strong>associativity</strong>, <strong>replacement policies</strong>, and <strong>partitioning schemes</strong>.</li>
+                            <li>Wrote test and validation scripts (<strong>runall.sh</strong>, <strong>runtests.sh</strong>) for automated profiling and output validation.</li>
+                            <li>Developed reusable source modules including <code>cache.cpp</code>, <code>dram.cpp</code>, <code>memsys.cpp</code>, and <code>core.cpp</code> for system component abstraction.</li>
+                        </ul>
+                    </p>
 
                     <div class="categories">Computer architecture, C++ programming</div>
                 </div>
@@ -623,7 +650,16 @@
 
                 <div class="description-box">
                     <h4>Trace diven CPU pipeline simulator</h4>
-                    <p>Developed a CPU pipeline simulator with functionalities for a Reorder Buffer (ROB) and Register Alias Table (RAT).</p>
+                    <p>
+                        <ul>
+                            <li>Implemented a <strong>trace-driven CPU pipeline simulator</strong> supporting both <strong>in-order</strong> and <strong>out-of-order</strong> scheduling.</li>
+                            <li>Designed microarchitectural components like <strong>Register Alias Table (RAT)</strong>, <strong>Reorder Buffer (ROB)</strong>, and <strong>execution queues</strong>.</li>
+                            <li>Supported <strong>2-wide superscalar pipelines</strong> with parameterized load latency and pipeline width.</li>
+                            <li>Simulated the instruction lifecycle: <strong>issue → schedule → execute → writeback → commit</strong>.</li>
+                            <li>Automated validation using <code>runall.sh</code> and <code>runtests.sh</code> with performance metrics such as <strong>CPI</strong>.</li>
+                            <li>Configured via CLI for architectural experimentation: e.g., <code>-pipewidth 2 -schedpolicy 1 -loadlatency 4</code>.</li>
+                        </ul>
+                    </p>
 
                     <div class="categories">Computer architecture, C++ programming</div>
                 </div>
@@ -643,7 +679,20 @@
 
                 <div class="description-box">
                     <h4>Temperature control</h4>
-                    <p>Developed firmware for a closed loop temperature control system in a 3D Printer.</p>
+                    <p>
+                        <ul>
+                            <li>Developed firmware for a <strong>closed-loop temperature control system</strong> in a 3D printer using <strong>STM32F407VET6 microcontroller</strong>.</li>
+                            <li>Implemented real-time temperature monitoring using a <strong>100K NTC thermistor</strong> and <strong>STM32 ADC</strong> with configurable resolution and sampling time.</li>
+                            <li>Controlled heating and cooling via <strong>PWM signals</strong> to a resistive coil and cooling fan based on <strong>temperature feedback</strong>.</li>
+                            <li>Converted thermistor resistance to temperature using the <strong>beta parameter equation</strong> (B = 3950) for accurate control.</li>
+                            <li>Mapped <strong>temperature ranges</strong> to <strong>PWM duty cycles</strong> using a lookup table for stable regulation.</li>
+                            <li>Logged temperature readings and heating/cooling cycles to an <strong>SD card</strong> via <strong>SPI</strong> for diagnostics and validation.</li>
+                            <li>Structured code across modular files for ADC input, temperature conversion, and actuation control.</li>
+                            <li>Used <strong>IAR Embedded Workbench</strong> and the <strong>STM32 Standard Peripheral Library (SPL)</strong> for development and debugging.</li>
+                            <li>Demonstrated skills in <strong>embedded C</strong>, <strong>real-time control</strong>, <strong>sensor interfacing</strong>, <strong>SD card logging</strong>, and <strong>STM32-based firmware design</strong>.</li>
+                        </ul>
+
+                    </p>
 
                     <div class="categories">Firmware programming, Embedded C</div>
                 </div>
@@ -664,7 +713,20 @@
 
                 <div class="description-box">
                     <h4>Addressable LED</h4>
-                    <p>Developed firmware for addressable LED, with customised functions</p>
+                    <p>
+                        <ul>
+                            <li>Used <strong>STM32CubeIDE</strong> to program <strong>STM32</strong> for controlling <strong>WS2812B</strong> addressable LEDs.</li>
+                            <li>Configured <strong>DMA (Memory-to-Peripheral)</strong> for efficient, non-blocking LED data transfer.</li>
+                            <li>Utilized <strong>HAL</strong> drivers to manage GPIO and timing peripherals.</li>
+                            <li>Designed custom LED strip initialization via <strong>LED_Strip_Init</strong> with configurable timeout and pin settings.</li>
+                            <li>Implemented per-pixel RGB control and brightness adjustment using <strong>Set_LED</strong> and state-based animation logic.</li>
+                            <li>Handled timed animations in the main loop using <strong>HAL_GetTick()</strong> for precise effect timing.</li>
+                            <li>Managed display updates and animation state with <strong>Display()</strong> and <strong>strip->prev</strong> tracking.</li>
+                            <li>Programmed multiple effects such as <strong>glow_alternate</strong>, <strong>fading</strong>, <strong>movement</strong>, and <strong>blinking</strong>.</li>
+                            <li>Freed resources safely using <strong>free_strip()</strong> during shutdown or reinit.</li>
+                        </ul>
+
+                    </p>
 
                     <div class="categories">Firmware programming, Embedded C</div>
                 </div>
@@ -685,7 +747,16 @@
 
                 <div class="description-box">
                     <h4>Reach</h4>
-                    <p>Reach is a multi-level game. Each game is developed using Operating System concepts.</p>
+                    <p>
+                        <ul>
+                            <li>Developed <strong>REACH</strong>, a Python-based terminal game implementing key <strong>Operating System concepts</strong> across 4 levels.</li>
+                            <li>Level 1: File I/O and shell command simulation using <strong>Python file handling</strong></li>
+                            <li>Level 2: File system navigation using <strong>symbolic and hard links</strong> with <code>os</code> and <code>os.path</code> modules</li>
+                            <li>Level 3: Implemented <strong>Producer-Consumer problem</strong> with a <strong>bounded buffer</strong> using <code>threading</code>, <code>Lock</code>, and <code>Semaphore</code></li>
+                            <li>Level 4: Simulated <strong>Banker’s Algorithm</strong> to demonstrate <strong>deadlock avoidance</strong></li>
+                            <li>Used <strong>os.pipe()</strong> for <strong>interprocess communication (IPC)</strong> between levels</li>
+                        </ul>
+                    </p>
 
                     <div class="categories">Python, Linux, Bash</div>
                 </div>
@@ -706,7 +777,14 @@
 
                 <div class="description-box">
                     <h4>Edge detection</h4>
-                    <p>Identifying the edges in the image using Sobel operator. The project makes use of CUDA programming.</p>
+                    <p>
+                        <ul>
+                            <li>Built an <strong>edge detection</strong> tool in <strong>CUDA</strong> to accelerate image processing using parallel threads on the GPU.</li>
+                            <li>Used the <strong>Sobel operator</strong> with 3×3 convolution matrices to compute horizontal and vertical gradients.</li>
+                            <li>Wrote custom <strong>CUDA kernels</strong> for filtering and managed device memory using <code>cudaMalloc</code> and <code>cudaMemcpy</code>.</li>
+                            <li>Compiled the project using <code>nvcc</code> and achieved faster edge detection compared to CPU-based implementations.</li>
+                        </ul>
+                    </p>
 
                     <div class="categories">Parallel computing, CUDA, C programming</div>
                 </div>
@@ -727,7 +805,15 @@
 
                 <div class="description-box">
                     <h4>Malware detection</h4>
-                    <p>Developed a deep neural network model uses the hyperbolic tangent (tanh) activation function and the Nesterov optimizer, trained it on behaviour based dataset, to detect if the file is malicious.</p>
+                    <p>
+                        <ul>
+                            <li>Developed a <strong>deep neural network</strong> to classify executable files as malicious or benign using behavioral features.</li>
+                            <li>Trained on a <strong>behavior-based dataset</strong> capturing runtime characteristics of files instead of static signatures.</li>
+                            <li>Validated the model with standard evaluation metrics such as accuracy and precision after applying train-test splits.</li>
+                            <li>Used the <strong>tanh activation function</strong> and trained the model with the <strong>Nesterov optimizer</strong> for faster convergence.</li>
+                            <li>Achieved <strong>99.98% accuracy</strong> on a behavior-based dataset, surpassing models like <strong>Decision Trees, K-Nearest Neighbors, Logistic Regression</strong>, and <strong>Naive Bayes</strong>.</li>
+                        </ul>
+                    </p>
                     <div class="categories">Deep Learning, Malware, Python</div>
                 </div>
 
@@ -747,7 +833,15 @@
 
                 <div class="description-box">
                     <h4>Distributed File System</h4>
-                    <p>Implementing distributed file system by employing file sharding mechanism. The users have to be authorised, and then they can access the file system which consists of 4 servers.</p>
+                    <p>
+                        <ul>
+                            <li>Built a <strong>Distributed File System</strong> in <strong>Python</strong> that shards files for scalable storage across multiple nodes.</li>
+                            <li>Implemented shard <strong>partitioning</strong>, <strong>replication</strong>, and <strong>fault tolerance</strong> to maintain data availability and consistency.</li>
+                            <li>Handled shard assignment and retrieval to enable efficient distributed file access.</li>
+                            <li>Configured client-server communication with customizable config files for flexible deployment.</li>
+                            <li>Used <strong>network programming</strong> and distributed system design principles.</li>
+                        </ul>
+                    </p>
 
                     <div class="categories">Distributed Systems, File sharding, Python</div>
                 </div>
@@ -768,7 +862,14 @@
 
                 <div class="description-box">
                     <h4>Roots Haircare</h4>
-                    <p>An e-commerce website to precisely cater to various hair types and offers personalized recommendations through a quiz.</p>
+                    <p>
+                        <ul>
+                            <li>Developed <strong>Roots Haircare</strong>, an e-commerce site using <strong>Django</strong> and <strong>Python</strong> for personalized hair product recommendations.</li>
+                            <li>Created a <strong>condition analysis quiz</strong> to identify hair type and suggest suitable products.</li>
+                            <li>Implemented shopping cart, product catalog, and order management using Django’s <strong>MVC architecture</strong>.</li>
+                            <li>Handled backend logic with <strong>RESTful views</strong> and dynamic frontend rendering.</li>
+                        </ul>
+                    </p>
 
                     <div class="categories">Web Development, Django, Database handling</div>
                 </div>
@@ -790,7 +891,14 @@
 
                 <div class="description-box">
                     <h4>TCP Filter</h4>
-                    <p>The TCP packets captured through Wireshark are filtered out based on the TCP flags, as stated in the input.</p>
+                    <p>
+                        <ul>
+                            <li>Created a <strong>TCP packet filter</strong> in <strong>Python</strong> that reads <code>.pcap</code> files generated by Wireshark.</li>
+                            <li>Filtered TCP packets based on user-specified <strong>TCP flags</strong> such as SYN, ACK, SYN-ACK, extracting IP addresses and ports.</li>
+                            <li>Designed modular functions for packet parsing, flag detection, and menu-driven user input handling.</li>
+                            <li>Saved filtered results to a text file with detailed connection info for network analysis.</li>
+                        </ul>
+                    </p>
 
                     <div class="categories">Packet Sniffing</div>
                 </div>
@@ -811,7 +919,15 @@
 
                 <div class="description-box">
                     <h4>Portfolio webpage</h4>
-                    <p>A personal webpage developed using HTML, CSS, JS, to showcase my education and experience.</p>
+                    <p>
+                        <ul>
+                            <li>Built a <strong>responsive personal profile website</strong> using <strong>HTML, CSS, JavaScript, PHP</strong>, and <strong>Bootstrap</strong>.</li>
+                            <li>Implemented <strong>carousel sliders</strong>, <strong>flipping cards</strong> with content on both sides, and <strong>modal dialogs</strong> for interactive UI.</li>
+                            <li>Organized sections for About Me, Projects, Experience, Education, Skills, and Contact Me.</li>
+                            <li>Designed for full responsiveness, optimizing display on both desktop and mobile browsers.</li>
+                            <li>Published and maintained the site using <strong>GitHub Pages</strong></li>
+                        </ul>
+                    </p>
 
                     <div class="categories">Front end development</div>
                 </div>
@@ -877,7 +993,14 @@
 
                         <div class="timeline-content">
                             <h4>Communications GBU, Oracle, India <a href="https://www.oracle.com/in/" target="_blank" rel="noopener noreferrer" onmouseover="this.style.color='black'"><i class="fa fa-external-link"></i></a></h4>
-                            <p> Developed a <b>test case using Behave and Selenium</b> modules, to test router functionality, and verified by integration into the test suite.</p>
+                            <p>
+                                <ul>
+                                    <li>Automated complex UI and backend router interactions using <strong>Python</strong>, <strong>Behave (BDD)</strong>, and <strong>Selenium</strong>, reducing test execution time from ~30 minutes to under 1 minute.</li>
+                                    <li>Integrated automation scripts into the <strong>Jenkins CI pipeline</strong>, enabling seamless nightly test execution and accelerating development feedback loops.</li>
+                                    <li>Validated outputs based on real router state transitions, developing an understanding of <strong>network device behavior</strong> and configuration workflows.</li>
+                                    <li>Worked in a collaborative enterprise software environment with tools such as <strong>Git</strong>, <strong>Jenkins</strong>, <strong>Agile methodology</strong>, and <strong>CI/CD pipelines</strong>.</li>
+                                </ul>
+                            </p>
                         </div>
 
                     </div>
@@ -896,7 +1019,16 @@
 
                         <div class="timeline-content">
                             <h4>Instrumentation and Control Engineering department, MIT, Manipal <a href="https://www.manipal.edu/mit/research.html" target="_blank" rel="noopener noreferrer" onmouseover="this.style.color='black'"><i class="fa fa-external-link"></i></a></h4>
-                            <p> Programmed a <b>Nonlinear Model Predictive Controller</b> for batch reactor applications, showing improved control accuracy and efficiency, employing machine learning technologies on a Jetson Nano.</p>
+                            <p>
+                                <ul>
+                                    <li>Configured <strong>Jetson Orin Nano</strong> with Ubuntu Linux to deploy deep reinforcement learning models for real-time closed-loop control.</li>
+                                    <li>Developed a Nonlinear Model Predictive Controller using the <strong>DDPG algorithm</strong> in Python with <strong>Keras</strong>, regulating batch reactor temperature based on real-time sensor input.</li>
+                                    <li>Redesigned the reward function to penalize overshoot and settling time, achieving a <strong>~30% reduction in overshoot</strong> and improved system stability.</li>
+                                    <li>Validated the controller through 3 real-time trials on actual batch polymerization hardware, demonstrating robustness to process noise and actuator delays.</li>
+                                    <li>Worked across embedded systems, real-time process control, and reinforcement learning using tools like <strong>Python</strong>, <strong>Keras</strong>, and <strong>Jetson edge devices</strong>.</li>
+                                </ul>
+
+                            </p>
                         </div>
 
                     </div>
@@ -915,7 +1047,15 @@
 
                         <div class="timeline-content">
                             <h4>Samsung, PRISM <a href="https://www.samsungprism.com/" target="_blank" rel="noopener noreferrer" onmouseover="this.style.color='black'"><i class="fa fa-external-link"></i></a></h4>
-                            <p> Designed <b>security-aware code assistance</b>, enhancing code reliability and security, by leveraging <b>CodeT5 model</b> and integrating <b>CVE patches</b>.</p>
+                            <p>
+                                <ul>
+                                    <li>Fine-tuned the <strong>CodeT5 transformer model</strong> to generate secure Java code, targeting vulnerability remediation through AI-based code generation.</li>
+                                    <li>Created a custom dataset by extracting and pairing <strong>vulnerable and patched code</strong> from <strong>CVE reports</strong> for supervised training.</li>
+                                    <li>Evaluated the model using <strong>BLEU</strong> and <strong>CodeBLEU</strong> metrics, achieving scores of <strong>~0.86 BLEU</strong> and <strong>0.60 CodeBLEU</strong>, outperforming the baseline.</li>
+                                    <li>Analyzed common security issues such as <strong>buffer overflows</strong> and <strong>use-after-free</strong>, deepening understanding of <strong>secure memory handling</strong> and system-level vulnerabilities.</li>
+                                    <li>Used tools and libraries like <strong>Python</strong>, <strong>Hugging Face Transformers</strong>, and <strong>Git</strong> to implement and evaluate the ML pipeline.</li>
+                                </ul>
+                            </p>
                         </div>
 
                     </div>
@@ -934,7 +1074,18 @@
 
                         <div class="timeline-content">
                             <h4>Accio Robotics <a href="https://acciorobotics.com/" target="_blank" rel="noopener noreferrer" onmouseover="this.style.color='black'"><i class="fa fa-external-link"></i></a></h4>
-                            <p> Developed <b>Put-To-Light module</b> for warehouse applications, and collaborated in firmware programming for the modules of the warehouse management bot.</p>
+                            <p>
+                                <ul>
+                                    <li>Developed embedded <strong>C/C++ firmware</strong> for a <strong>Put-To-Light (PTL)</strong> module in warehouse robots, integrating solenoids, limit switch sensors, and OLED displays.</li>
+                                    <li>Designed and implemented a <strong>finite state machine (FSM)</strong> to manage drawer operations across <strong>24 deployed PTL modules</strong>, ensuring responsive real-time control.</li>
+                                    <li>Wrote custom LED control firmware using <strong>addressable LEDs</strong> to display robot directions and battery levels with visual feedback.</li>
+                                    <li>Optimized the network stack by introducing a hybrid <strong>CAN + MQTT over UART</strong> system via <strong>ESP32</strong>, significantly improving feedback reliability and reducing CAN bus congestion.</li>
+                                    <li>Reduced feedback loss from ~10% to <strong>&lt;0.1%</strong> during high-volume operation, enhancing scalability of PTL stacks.</li>
+                                    <li>Worked with hardware including <strong>STM32</strong>, <strong>ESP32</strong>, <strong>WS2812 LEDs</strong>, solenoids, limit switch sensors, and used tools like oscilloscopes, logic analyzers, and <strong>Git</strong>                                        for version control.
+                                    </li>
+                                </ul>
+
+                            </p>
                         </div>
 
                     </div>
@@ -953,7 +1104,15 @@
 
                         <div class="timeline-content">
                             <h4>Defence Systems, Larsen & Toubro <a href="https://www.linkedin.com/company/defence-systems-larsen-&-toubro/?originalSubdomain=in" target="_blank" rel="noopener noreferrer" onmouseover="this.style.color='black'"><i class="fa fa-external-link"></i></a></h4>
-                            <p> Built modules for the flight software and <b>sensor data test facility</b>, contributing to reliable software performance, by undergoing training in flight software development for space applications.
+                            <p>
+                                <ul>
+                                    <li>Supported development of an <strong>Attitude Determination and Control System (ADCS)</strong> by evaluating and <strong>selecting MCUs</strong> based on peripheral needs, power consumption, and environmental robustness.
+                                    </li>
+                                    <li>Interfaced the <strong>MPU6050 gyroscope + accelerometer</strong> over <strong>I2C</strong> using embedded C, implementing register-level configuration and sensor data filtering.</li>
+                                    <li>Developed firmware to send raw and processed sensor data to a host system for validation, enabling accurate testing of inertial behavior.</li>
+                                    <li>Contributed to a custom <strong>sensor test rig</strong> using <strong>Node.js</strong> to facilitate standalone gyroscope testing and firmware verification.</li>
+                                    <li>Used tools like <strong>STM32CubeIDE</strong>, <strong>oscilloscope</strong>, <strong>logic analyzer</strong>, and <strong>ST-Link/JTAG</strong> for low-level debugging and validation.</li>
+                                </ul>
                             </p>
                         </div>
 
@@ -1648,13 +1807,13 @@
                                         <div class="cert1-front">
                                             <img src="images\skills\embedded.png">
                                             <div class="tech-name">
-                                                <h3>Sensor technologies</h3>
+                                                <h3>Embedded Systems & Firmware Development</h3>
                                             </div>
                                         </div>
                                         <div class="cert1-back">
                                             <div class="tech-name">
                                                 <div class="back">
-                                                    STM32 | LPC | Jetson | Arduino | ESP | Gyroscope | ADC
+                                                    STM32 | ESP32 | Arduino | Jetson Nano | Bare-metal programming | RTOS | FSM | Interrupts | DMA | PWM | GPIO | ADC | Timers | IAR Embedded Workbench | STM32CubeIDE | Keil µVision | JTAG | ST-Link
                                                 </div>
                                             </div>
                                         </div>
@@ -1666,13 +1825,13 @@
                                         <div class="cert1-front">
                                             <img src="images\skills\ml.png">
                                             <div class="tech-name">
-                                                <h3>ML technologies</h3>
+                                                <h3>Programming Languages & Paradigms</h3>
                                             </div>
                                         </div>
                                         <div class="cert1-back">
                                             <div class="tech-name">
                                                 <div class="back">
-                                                    Python | Scikit-learn | TensorFlow | DNN | CNN | Reinforcement learning | Transformers | Pandas | NumPy | Jupyter
+                                                    C | C++ | Embedded C | ARM Assembly | Bare Metal | Python | Java | SQL | Bash | CUDA | OpenCL | OpenMP | HTML | CSS | JavaScript | Node.js | MongoDB | MySQL
                                                 </div>
                                             </div>
                                         </div>
@@ -1684,13 +1843,13 @@
                                         <div class="cert1-front">
                                             <img src="images\skills\iot.png">
                                             <div class="tech-name">
-                                                <h3>Internet of Things</h3>
+                                                <h3>Protocols & Communication Interfaces</h3>
                                             </div>
                                         </div>
                                         <div class="cert1-back">
                                             <div class="tech-name">
                                                 <div class="back">
-                                                    Embedded C | ARM Assembly | VHDL | I2C | SPI | UART | Wi-Fi | Bluetooth | MQTT | SQL | OpenCL | CUDA | WireShark | GNS3 | NS2
+                                                    I2C | SPI | UART | CAN | MQTT | Bluetooth | Wi-Fi
                                                 </div>
                                             </div>
                                         </div>
@@ -1702,13 +1861,13 @@
                                         <div class="cert1-front">
                                             <img src="images\skills\analyser.png">
                                             <div class="tech-name">
-                                                <h3>Analysers</h3>
+                                                <h3>Hardware & Sensors</h3>
                                             </div>
                                         </div>
                                         <div class="cert1-back">
                                             <div class="tech-name">
                                                 <div class="back">
-                                                    Oscilloscope | Logic analyser | Spectrum analyser
+                                                    STM32 | ESP32 | LPC | Jetson Nano | Arduino | MPU6050 Gyroscope | ADC | OLED | WS2812B LEDs | Sunsensor | Logic Analyzer | Oscilloscope
                                                 </div>
                                             </div>
                                         </div>
@@ -1720,13 +1879,13 @@
                                         <div class="cert1-front">
                                             <img src="images\skills\web.png">
                                             <div class="tech-name">
-                                                <h3>Web development</h3>
+                                                <h3>Tools & Development Ecosystem</h3>
                                             </div>
                                         </div>
                                         <div class="cert1-back">
                                             <div class="tech-name">
                                                 <div class="back">
-                                                    HTML | CSS | JS | Responsive design | Git | Java | Django
+                                                    IAR Embedded Workbench | Keil µVision | STM32CubeIDE | JTAG | ST-Link | Git | Linux | Device Drivers | Shell Scripting | NS-3 | Wireshark | Jenkins | Docker | CI/CD | Agile Methodologies
                                                 </div>
                                             </div>
                                         </div>
@@ -1738,13 +1897,49 @@
                                         <div class="cert1-front">
                                             <img src="images\skills\soft.png">
                                             <div class="tech-name">
-                                                <h3>Soft skills</h3>
+                                                <h3>Edge AI & Acceleration</h3>
                                             </div>
                                         </div>
                                         <div class="cert1-back">
                                             <div class="tech-name">
                                                 <div class="back">
-                                                    Teamwork | Communication | Interpersonal Skills | Leadership | Presentation Skills
+                                                    Jetson Nano | DDPG | Nonlinear MPC | CodeT5 | Keras | CUDA | OpenCL | OpenMP | TensorRT | PyTorch | TensorFlow
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cert1" tabindex="0">
+                                    <div class="cert1-inner">
+                                        <div class="cert1-front">
+                                            <img src="images\skills\soft.png">
+                                            <div class="tech-name">
+                                                <h3>Web & Application Development</h3>
+                                            </div>
+                                        </div>
+                                        <div class="cert1-back">
+                                            <div class="tech-name">
+                                                <div class="back">
+                                                    HTML | CSS | JavaScript | Python | Selenium | Behave | TCP Flags Filtering | Query | Bootstrap | Django | REST APIs | JSON
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="cert1" tabindex="0">
+                                    <div class="cert1-inner">
+                                        <div class="cert1-front">
+                                            <img src="images\skills\soft.png">
+                                            <div class="tech-name">
+                                                <h3>Soft Skills</h3>
+                                            </div>
+                                        </div>
+                                        <div class="cert1-back">
+                                            <div class="tech-name">
+                                                <div class="back">
+                                                    Teamwork | Communication | Leadership | Presentation | Documentation | Agile Development | Cross-functional Collaboration
                                                 </div>
                                             </div>
                                         </div>
@@ -1808,7 +2003,7 @@
                                         <div class="cert-name">
                                             <h5>C++ programming</h5>
                                             <div>
-                                                <a href="https://github.com/Sanj24Dev/chess-3dGraphics" class="cert-btn" target="_blank" rel="noopener noreferrer">Best work</a>
+                                                <a href="https://github.com/Sanj24Dev/cmp-memory-system-simulator" class="cert-btn" target="_blank" rel="noopener noreferrer">Best work</a>
                                             </div>
                                         </div>
                                     </div>
@@ -1864,7 +2059,7 @@
                                         <div class="cert-name">
                                             <h5>SQL</h5>
                                             <div>
-                                                <a href="#" class="cert-btn" target="_blank" rel="noopener noreferrer">Best work</a>
+                                                <a href="https://github.com/Sanj24Dev/roots-haircare" class="cert-btn" target="_blank" rel="noopener noreferrer">Best work</a>
                                             </div>
                                         </div>
                                     </div>

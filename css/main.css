@@ -1862,8 +1862,8 @@ header .logo a {
 }
 
 .intro-info img {
-    height: 11rem;
-    width: 11rem;
+    height: 15rem;
+    width: 15rem;
     border-radius: 50%;
     margin: .9rem 0 0 0;
     float: left;
@@ -1871,7 +1871,7 @@ header .logo a {
 
 .intro-info .lead {
     text-align: justify;
-    padding-left: 15rem;
+    padding-left: 20rem;
 }
 
 .about-content {
@@ -2112,6 +2112,10 @@ header .logo a {
 }
 
 #resume .timeline-content p {
+    text-align: justify;
+}
+
+#resume .timeline-content ul {
     text-align: justify;
 }
 
@@ -2574,6 +2578,11 @@ header .logo a {
     font-size: 1.4rem;
     line-height: 2.4rem;
     margin-bottom: 12px;
+}
+
+.popup-modal .description-box ul {
+    text-align: justify;
+    margin-right: 1rem;
 }
 
 .popup-modal .categories {
@@ -3666,7 +3675,7 @@ footer .copyright span:last-child::after {
 #modal-tech .cert1 {
     background-color: transparent;
     /* width: 300px; */
-    height: 300px;
+    height: 350px;
     padding: 0;
 }
 
