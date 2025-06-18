@@ -1296,6 +1296,113 @@ input::-moz-focus-inner {
     width: 100%;
 }
 
+.skill-list {
+    margin-bottom: 1.2rem;
+    text-align: center;
+    padding: 0 2rem;
+    height: max-content;
+    /* background-color: #000; */
+}
+
+.skills-description-box {
+    padding: 1rem 3rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.skills-description-box h1 {
+    width: 50%;
+    text-align: left;
+    padding-top: 3rem;
+}
+
+.skill-box {
+    margin-bottom: 1.2rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+    background-color: #CAF4FF;
+    color: #000;
+    background-color: transparent;
+    height: 350px;
+    padding: 0;
+}
+
+.skill-box h3 {
+    color: #000;
+}
+
+.skill-box-inner {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    /*   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); */
+    backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+}
+
+.skill-box:hover .skill-box-inner,
+.skill-box:focus .skill-box-inner {
+    transform: rotateY(180deg);
+}
+
+.skill-box-front,
+.skill-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.skill-box-front {
+    background: white;
+    color: black;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.skill-box-front img {
+    height: 15rem;
+    width: 15rem !important;
+    border-radius: 50%;
+}
+
+.skill-box-back {
+    background: white;
+    /* color: white; */
+    transform: rotateY(180deg);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.tech-name {
+    /* padding-top: 5%; */
+    margin: 10px;
+    color: #23545c;
+    font-weight: 800;
+    font-size: large;
+}
+
+.tech-name ul {
+    list-style-type: none;
+}
+
+.tech-name div {
+    padding-left: 7%;
+    padding-right: 7%;
+}
+
 
 /** 
   * ===================================================================
@@ -3462,6 +3569,7 @@ footer .copyright span:last-child::after {
 .cert-description-box h1 {
     width: 50%;
     text-align: left;
+    padding-top: 3rem;
 }
 
 .popup-cert-modal {
@@ -3611,12 +3719,14 @@ footer .copyright span:last-child::after {
 .owl-controls .owl-buttons .owl-prev:after {
     content: "\f104";
     left: 0;
+    margin-right: 3rem;
     /* right: 80rem; */
 }
 
 .owl-controls .owl-buttons .owl-next:after {
     content: "\f105";
     right: 0;
+    padding-left: 1rem;
     /* right: 80rem; */
 }
 
