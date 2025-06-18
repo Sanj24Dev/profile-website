@@ -1369,6 +1369,25 @@ input::-moz-focus-inner {
     border-radius: 10px;
 }
 
+.skill-image-section {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    /* border-bottom: 2px solid rgba(255, 255, 255, 0.2); */
+}
+
+.skill-title-section {
+    flex: 1;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    padding: 20px;
+    /* background: rgba(0, 0, 0, 0.1); */
+    border-radius: 0 0 10px 10px;
+}
+
 .skill-box-front img {
     height: 15rem;
     width: 15rem !important;
