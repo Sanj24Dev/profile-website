@@ -526,9 +526,24 @@
         <div class="blue-section">
             <div class="filters-content">
                 <div class="row grid block-1-3 block-tab-1-2 block-mob-full">
+                    <div class="bgrid folio-item all embedded">
+                        <div class="item-wrap">
+                            <img src="images/portfolio/intrusion.png" alt="intrusion">
+                            <a href="#modal-16" class="overlay">
+                                <div class="folio-item-table">
+                                    <div class="folio-item-cell">
+                                        <h3 class="folio-title">Light-based intrusion logger</h3>
+                                        <span class="folio-types">
+		     					       	   Firmware Development
+		     					      </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                     <div class="bgrid folio-item all dev">
                         <div class="item-wrap">
-                            <img src="images/portfolio/closet.png" alt="temp">
+                            <img src="images/portfolio/closet.png" alt="closet">
                             <a href="#modal-15" class="overlay">
                                 <div class="folio-item-table">
                                     <div class="folio-item-cell">
@@ -543,7 +558,7 @@
                     </div>
                     <div class="bgrid folio-item all embedded">
                         <div class="item-wrap">
-                            <img src="images/portfolio/fall-detection.png" alt="temp">
+                            <img src="images/portfolio/fall-detection.png" alt="fall">
                             <a href="#modal-14" class="overlay">
                                 <div class="folio-item-table">
                                     <div class="folio-item-cell">
@@ -558,7 +573,7 @@
                     </div>
                     <div class="bgrid folio-item all sys">
                         <div class="item-wrap">
-                            <img src="images/portfolio/sdn.png" alt="temp">
+                            <img src="images/portfolio/sdn.png" alt="sdn">
                             <a href="#modal-13" class="overlay">
                                 <div class="folio-item-table">
                                     <div class="folio-item-cell">
@@ -784,6 +799,34 @@
 
             <!-- modal popups - begin
 	        ============================================================= -->
+            <div id="modal-16" class="popup-modal slider mfp-hide">
+
+                <div class="media">
+                    <img src="images/portfolio/modals/m-intrusion.png" alt="" />
+                </div>
+
+                <div class="description-box">
+                    <h4>Light based intrusion logger</h4>
+                    <p>
+                        <ul>
+                            <li>Designed a <strong>low-power intrusion logger</strong> for lockers, drawers, and equipment cabinets, where constant monitoring is not feasible.</li>
+                            <li>Used a <strong>photoresistor</strong> to detect sudden changes in light and a <strong>push button</strong> to identify manual interaction.</li>
+                            <li>Implemented a <strong>finite state machine (FSM)</strong> to manage transitions between sleep, monitoring, and logging states efficiently.</li>
+                            <li>Events are stored with a timestamp, and a buzzer is triggered for alerts during suspicious activity.</li>
+                            <li>The system remains in deep sleep during inactivity and <strong>wakes up only through interrupts</strong>, enabling significant power savings.</li>
+                            <li>Achieved reliable event detection in enclosed spaces with minimal energy use and no need for continuous manual checks.</li>
+                        </ul>
+                    </p>
+
+                    <div class="categories">Arduino, FSM, low power, logging</div>
+                </div>
+
+                <div class="link-box">
+                    <a href="https://github.com/Sanj24Dev/light-based-intrusion-logger" target="_blank" rel="noopener noreferrer">View the project</a>
+                    <a href="#" class="popup-modal-dismiss">Close</a>
+                </div>
+
+            </div>
             <div id="modal-15" class="popup-modal slider mfp-hide">
 
                 <div class="media">
