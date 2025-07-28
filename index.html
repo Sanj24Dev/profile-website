@@ -526,6 +526,21 @@
         <div class="blue-section">
             <div class="filters-content">
                 <div class="row grid block-1-3 block-tab-1-2 block-mob-full">
+                    <div class="bgrid folio-item all ml">
+                        <div class="item-wrap">
+                            <img src="images/portfolio/rock.png" alt="rock">
+                            <a href="#modal-18" class="overlay">
+                                <div class="folio-item-table">
+                                    <div class="folio-item-cell">
+                                        <h3 class="folio-title">Rock-Paper-Scissors with OpenCV</h3>
+                                        <span class="folio-types">
+		     					       	   Computer Vision
+		     					      </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                     <div class="bgrid folio-item all embedded">
                         <div class="item-wrap">
                             <img src="images/portfolio/ferm.png" alt="ferm">
@@ -814,6 +829,35 @@
 
             <!-- modal popups - begin
 	        ============================================================= -->
+            <div id="modal-18" class="popup-modal slider mfp-hide">
+
+                <div class="media">
+                    <img src="images/portfolio/modals/m-rock.png" alt="" />
+                </div>
+
+                <div class="description-box">
+                    <h4>Rock-Paper-Scissors with OpenCV</h4>
+                    <p>
+                        <ul>
+                            <li>Built a real-time hand gesture recognition game using <strong>OpenCV</strong> and <strong>MediaPipe Hands</strong>, allowing users to play Rock-Paper-Scissors via webcam input.</li>
+                            <li>Implemented a <strong>rule-based gesture classification system</strong> using MediaPipe's 21 hand landmarks to distinguish between rock, paper, and scissors.</li>
+                            <li>Created a <strong>real-time feedback loop</strong> with live video annotation and overlayed UI elements (user move, computer move, scores) using OpenCV drawing utilities.</li>
+                            <li>Added a <strong>gesture locking mechanism</strong> to stabilize predictions and prevent repeated detections in fast-moving frames.</li>
+                            <li>Integrated a Flask-based frontend to serve the webcam feed and provide a <strong>web-accessible interface</strong> for gameplay.</li>
+                            <li>Tested for gesture accuracy, responsiveness, and frame stability across lighting conditions and camera positions.</li>
+                        </ul>
+
+                    </p>
+
+                    <div class="categories">OpenCV, MediaPipe, Flask</div>
+                </div>
+
+                <div class="link-box">
+                    <a href="https://github.com/Sanj24Dev/rock-paper-scissors-opencv" target="_blank" rel="noopener noreferrer">View the project</a>
+                    <a href="#" class="popup-modal-dismiss">Close</a>
+                </div>
+
+            </div>
             <div id="modal-17" class="popup-modal slider mfp-hide">
 
                 <div class="media">
@@ -826,7 +870,7 @@
                         <ul>
                             <li>Designed and implemented a lightweight embedded protocol (FERM) to ensure <strong>reliable data transmission</strong>, independent of platform-specific transport layers.</li>
                             <li>Structured the protocol using a layered architecture to separate core logic from hardware-dependent code, enabling <strong>portability</strong> across STM32, ESP32, and other microcontrollers.</li>
-                            <li>Developed a <strong>custom packet format</strong>> with flags, 4-bit sequence numbers, 8-bit CRC for integrity, and a 15-byte payload constraint optimized for typical embedded buffers.</li>
+                            <li>Developed a <strong>custom packet format</strong> with flags, 4-bit sequence numbers, 8-bit CRC for integrity, and a 15-byte payload constraint optimized for typical embedded buffers.</li>
                             <li>Built a state-machine-driven <strong>retransmission mechanism using timers and ACKs</strong> to handle dropped or corrupted packets without relying on underlying hardware flow control.</li>
                             <li>Implemented <strong>CRC-8 checksum</strong> with polynomial 0x07 for minimal overhead and effective error detection under noise-prone serial environments.</li>
                             <li>Tested packet delivery and retransmission using loopback mode and inter-board communication under conditions of induced delay, corruption, and loss.</li>
