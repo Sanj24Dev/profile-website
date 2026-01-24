@@ -515,7 +515,7 @@
         <!-- filters -->
         <div class="filters">
             <ul>
-                <li class="active" data-filter="*">All</li>
+                <li class="active" data-filter=".all">Featured</li>
                 <li data-filter=".embedded">Embedded systems</li>
                 <li data-filter=".ml">AI/ML</li>
                 <li data-filter=".sys">Systems programming</li>
@@ -526,6 +526,36 @@
         <div class="blue-section">
             <div class="filters-content">
                 <div class="row grid block-1-3 block-tab-1-2 block-mob-full">
+                    <div class="bgrid folio-item sys">
+                        <div class="item-wrap">
+                            <img src="images/portfolio/podem.png" alt="rock">
+                            <a href="#modal-20" class="overlay">
+                                <div class="folio-item-table">
+                                    <div class="folio-item-cell">
+                                        <h3 class="folio-title">PODEM - Deductive Fault Simulator for Digital Circuits</h3>
+                                        <span class="folio-types">
+		     					       	   Digital testing
+		     					      </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="bgrid folio-item all embedded">
+                        <div class="item-wrap">
+                            <img src="images/portfolio/glove.png" alt="rock">
+                            <a href="#modal-19" class="overlay">
+                                <div class="folio-item-table">
+                                    <div class="folio-item-cell">
+                                        <h3 class="folio-title">SenseGlove - Gesture Recognition for Assistive Mobility</h3>
+                                        <span class="folio-types">
+		     					       	   Embedded ML
+		     					      </span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                     <div class="bgrid folio-item all ml">
                         <div class="item-wrap">
                             <img src="images/portfolio/rock.png" alt="rock">
@@ -616,7 +646,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="bgrid folio-item all sys">
+                    <div class="bgrid folio-item sys">
                         <div class="item-wrap">
                             <img src="images/portfolio/chess.png" alt="temp">
                             <a href="#modal-12" class="overlay">
@@ -678,7 +708,7 @@
                     </div>
                     <!-- </div>
                 <div class="row block-1-3 block-mob-full stack"> -->
-                    <div class="bgrid folio-item all embedded">
+                    <div class="bgrid folio-item embedded">
                         <div class="item-wrap">
                             <img src="images/portfolio/led.png" alt="led">
                             <a href="#modal-03" class="overlay">
@@ -693,7 +723,7 @@
                             </a>
                         </div>
                     </div>
-                    <div class="bgrid folio-item all sys">
+                    <div class="bgrid folio-item sys">
                         <div class="item-wrap">
                             <img src="images/portfolio/reach.png" alt="Reach">
                             <a href="#modal-04" class="overlay">
@@ -709,7 +739,7 @@
                         </div>
                     </div>
 
-                    <div class="bgrid folio-item all sys">
+                    <div class="bgrid folio-item all ml">
                         <div class="item-wrap">
                             <img src="images/portfolio/edge.png" alt="edge">
                             <a href="#modal-05" class="overlay">
@@ -761,7 +791,7 @@
                         </div>
                     </div>
 
-                    <div class="bgrid folio-item all dev">
+                    <div class="bgrid folio-item dev">
                         <div class="item-wrap">
                             <img src="images/portfolio/roots.png" alt="roots">
                             <a href="#modal-08" class="overlay">
@@ -777,7 +807,7 @@
                         </div>
                     </div>
 
-                    <div class="bgrid folio-item all sys">
+                    <div class="bgrid folio-item sys">
                         <div class="item-wrap">
                             <img src="images/portfolio/tcp.png" alt="tcp">
                             <a href="#modal-09" class="overlay">
@@ -793,7 +823,7 @@
                         </div>
                     </div>
 
-                    <div class="bgrid folio-item all dev">
+                    <div class="bgrid folio-item dev">
                         <div class="item-wrap">
                             <img src="images/portfolio/webpage.png" alt="tcp">
                             <a href="#modal-10" class="overlay">
@@ -813,8 +843,9 @@
 
             <script>
                 var $grid = $('.grid').isotope({
-                    itemSelector: '.all',
-                    layoutMode: 'fitRows'
+                    itemSelector: '.folio-item',
+                    layoutMode: 'fitRows',
+                    filter: '.all'
                 });
                 $('.filters ul li').click(function() {
                     $('.filters ul li').removeClass('active');
@@ -829,6 +860,65 @@
 
             <!-- modal popups - begin
 	        ============================================================= -->
+            <div id="modal-20" class="popup-modal slider mfp-hide">
+
+                <div class="media">
+                    <img src="images/portfolio/modals/m-podem.png" alt="" />
+                </div>
+
+                <div class="description-box">
+                    <h4>PODEM - Deductive Fault Simulator for Digital Circuits</h4>
+                    <p>
+                        <ul>
+                            <li>Implemented the <strong>PODEM (Path-Oriented Decision Making) algorithm</strong> in C++ for automatic test pattern generation (ATPG) in digital circuits.</li>
+                            <li>Developed a <strong>deductive fault simulator</strong> that efficiently propagates fault lists through combinational logic gates to identify detectable stuck-at faults.</li>
+                            <li>Built a <strong>circuit parser</strong> to read gate-level netlists and construct internal graph representations for traversal and fault analysis.</li>
+                            <li>Implemented <strong>backtracking search algorithms</strong> with branch-and-bound optimization to systematically explore test vector assignments for fault detection.</li>
+                            <li>Designed data structures for <strong>fault propagation tracking</strong>, using bit-level operations to efficiently manage fault lists at each gate output.</li>
+                            <li>Applied <strong>controllability and observability metrics</strong> to guide the PODEM search heuristics and reduce computation time for test generation.</li>
+                            <li>Validated the simulator against benchmark circuits, achieving comprehensive fault coverage and verifying correctness of generated test patterns.</li>
+                        </ul>
+                    </p>
+
+                    <div class="categories">C++, Algorithms, Graph Traversal, VLSI Testing, Search Optimization</div>
+                </div>
+
+                <div class="link-box">
+                    <a href="https://github.com/Sanj24Dev/PODEM" target="_blank" rel="noopener noreferrer">View the project</a>
+                    <a href="#" class="popup-modal-dismiss">Close</a>
+                </div>
+
+            </div>
+            <div id="modal-19" class="popup-modal slider mfp-hide">
+
+                <div class="media">
+                    <img src="images/portfolio/modals/m-glove.png" alt="" />
+                </div>
+
+                <div class="description-box">
+                    <h4>SenseGlove - Gesture Recognition for Assistive Mobility</h4>
+                    <p>
+                        <ul>
+                            <li>Developed a wearable gesture recognition system using <strong>flex sensors and IMU</strong> to translate hand gestures into commands for assistive mobility devices like wheelchairs.</li>
+                            <li>Designed hardware integration with <strong>2 flex sensors (index and thumb)</strong> and a <strong>6-axis IMU</strong> connected to an ESP32C6 microcontroller for real-time sensor data acquisition.</li>
+                            <li>Implemented two classification approaches: a <strong>heuristic-based state machine</strong> for deterministic gesture detection and a <strong>Random Forest classifier</strong> achieving <strong>92% accuracy</strong> across
+                                4 gestures (FORWARD, STOP, LEFT, RIGHT).</li>
+                            <li>Built an <strong>embedded ML pipeline</strong> that runs inference on-device with <strong>&lt;200ms latency</strong>, enabling real-time gesture classification on resource-constrained hardware.</li>
+                            <li>Integrated <strong>ESP-NOW wireless protocol</strong> for low-latency communication between the glove and a robot chassis, demonstrating practical IoT application.</li>
+                            <li>Designed <strong>FreeRTOS-based firmware</strong> on the receiver side with queue-based task communication to prevent blocking in callbacks and ensure deterministic motor control updates.</li>
+                            <li>Collected and preprocessed sensor data with <strong>moving average filtering</strong> to improve signal stability and classification robustness under varying hand positions.</li>
+                        </ul>
+                    </p>
+
+                    <div class="categories">ESP32, Random Forest, Embedded ML, Sensor Fusion, FreeRTOS, ESP-NOW</div>
+                </div>
+
+                <div class="link-box">
+                    <a href="https://github.com/Sanj24Dev/sense-glove" target="_blank" rel="noopener noreferrer">View the project</a>
+                    <a href="#" class="popup-modal-dismiss">Close</a>
+                </div>
+
+            </div>
             <div id="modal-18" class="popup-modal slider mfp-hide">
 
                 <div class="media">
@@ -2718,6 +2808,8 @@ Project list:
 16. Light based intrusion logger with power management using Arduino - in c, interrupt driven and low power mode
 17. FERM - secure comm protocol for mcu applications using c
 18. Rock paper scissors with OpenCV using python
+19. Deductive fault simulator for circuits using cpp
+20. Gesture recognition using ML using python using a glove sensor
 
 
 -->
