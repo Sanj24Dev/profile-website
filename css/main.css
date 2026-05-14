@@ -2155,47 +2155,55 @@ header .logo a {
   * ------------------------------------------------------------------- 
   */
 
-#resume {
+#resume,
+#publications {
     padding-top: 12rem;
     padding-bottom: 12rem;
     background-color: #FFFFFF;
 }
 
-#resume .resume-header {
+#resume .resume-header,
+#publications .resume-header {
     text-align: center;
 }
 
-#resume .resume-header h2 {
+#resume .resume-header h2,
+#publications .resume-header h2 {
     color: #03AED2;
 }
 
-#resume .resume-timeline {
+#resume .resume-timeline,
+#publications .resume-timeline {
     max-width: 980px;
 }
 
-#resume .timeline-wrap {
+#resume .timeline-wrap,
+#publications .timeline-wrap {
     position: relative;
     margin-top: 1.5rem;
     margin-bottom: 6rem;
 }
 
-#resume .timeline-wrap::before {
+#resume .timeline-wrap::before,
+#publications .timeline-wrap::before {
     content: "";
     display: block;
     width: 1px;
     height: 100%;
     background: rgba(0, 0, 0, 0.1);
     position: absolute;
-    left: 35%;
+    left: 25%;
     top: 0;
 }
 
-#resume .timeline-block {
+#resume .timeline-block,
+#publications .timeline-block {
     position: relative;
     padding-top: 1.5rem;
 }
 
-#resume .timeline-ico {
+#resume .timeline-ico,
+#publications .timeline-ico {
     height: 4.8rem;
     width: 4.8rem;
     line-height: 4.8rem;
@@ -2204,53 +2212,56 @@ header .logo a {
     text-align: center;
     color: #FFFFFF;
     position: absolute;
-    left: 35%;
+    left: 25%;
     top: .9rem;
     margin-left: -2.4rem;
 }
 
-#resume .timeline-ico i {
+#resume .timeline-ico i,
+#publications .timeline-ico i {
     position: relative;
     left: .05rem;
     top: .2rem;
 }
 
-#resume .timeline-header {
+#resume .timeline-header,
+#publications .timeline-header {
     float: left;
-    width: 35%;
+    width: 30%;
     padding-right: 90px;
     text-align: right;
 }
 
-#resume .timeline-header h3 {
+#resume .timeline-header h3,
+#publications .timeline-header h3 {
     margin-bottom: 0;
 }
 
-#resume .timeline-header p {
+#resume .timeline-header p,
+#publications .timeline-header p {
     font-family: "poppins-regular", sans-serif;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: #888;
 }
 
-#resume .timeline-content {
-    margin-left: 35%;
+#resume .timeline-content,
+#publications .timeline-content {
+    margin-left: 25%;
     padding-left: 60px;
 }
 
-#resume .timeline-content p {
+#resume .timeline-content p,
+#publications .timeline-content p {
     text-align: justify;
 }
 
-#resume .timeline-content ul {
+#resume .timeline-content ul,
+#publications .timeline-content ul {
     text-align: justify;
 }
 
-
-/* #resume .timeline-content dd {
-     text-align: justify;
- } */
-
-#resume .timeline-content h4 {
+#resume .timeline-content h4,
+#publications .timeline-content h4 {
     position: relative;
     /* padding-bottom: 1.8rem; */
 }
@@ -2333,7 +2344,8 @@ header .logo a {
      display: list-item;
  } */
 
-#resume .doi-btn {
+#resume .doi-btn,
+#publications .doi-btn {
     font-family: "poppins-bold", sans-serif;
     font-size: 1.6rem;
     color: #000;
@@ -2344,7 +2356,8 @@ header .logo a {
     border-radius: 0.3rem;
 }
 
-#resume .doi-btn:hover {
+#resume .doi-btn:hover,
+#publications .doi-btn:hover {
     border: #03AED2;
     color: #03AED2;
     border-width: 0.2rem;
@@ -2530,7 +2543,7 @@ header .logo a {
 
 #portfolio .folio-title {
     color: #FFFFFF;
-    font-size: 3.3rem;
+    font-size: 2.0rem;
     padding: 0 3rem;
     margin-bottom: 0;
 }
